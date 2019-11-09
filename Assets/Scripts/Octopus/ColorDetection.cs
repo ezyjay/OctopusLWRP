@@ -25,6 +25,7 @@ public class ColorDetection : MonoBehaviour
     private void Awake() {
 		_renderer = GetComponent<MeshRenderer>();
         _originalColor = _renderer.material.GetColor("_BaseColor");
+		_newColor = _renderer.material.GetColor("_BaseColor");
     }
 
     private void OnDisable() {

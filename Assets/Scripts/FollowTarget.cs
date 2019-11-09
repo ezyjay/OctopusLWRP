@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FollowTarget : MonoBehaviour
 {
+	[Header("Follow target")]
     public ObjectTarget _target;
     public Vector2 _offset;
     public float _moveTime;
@@ -11,6 +12,7 @@ public class FollowTarget : MonoBehaviour
     public bool _rotate;
     public bool _onlyRotateInX;
     public Rotation _rotation;
+	public bool _lerp = true;
 
     protected Vector2 _direction;
 
@@ -28,7 +30,8 @@ public class FollowTarget : MonoBehaviour
             else
                 _rotation.RotateTowardsDirection((Vector2)transform.position - _target.CurrentTarget);
         }
-        transform.position = Vector3.Lerp(transform.position, newPos, _moveTime * Time.deltaTime);
+		if(_lerp)transform.position = Vector3.Lerp(transform.position, newPos, _moveTime * Time.deltaTime);
+		else transform.position = Vector3.MoveTowards(transform.position, newPos, _moveTime * Time.deltaTime);
         _direction = (newPos - transform.position).normalized;
     }
 }

@@ -5,12 +5,29 @@ using UnityEngine;
 public class OpenGate : MonoBehaviour
 {
 	public Animator _gateAnimator;
+	public bool _openTowardsRight = true;
+
+	private void OnTriggerEnter(Collider other) {
+		if (other.CompareTag("Shark")) {
+			SharkAttack sharkAttack = other.gameObject.GetComponentInChildren<SharkAttack>();
+			sharkAttack.DoPlayerDetection = false;
+			sharkAttack.FadeShark();
+			other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+			Open();
+		}
+	}
 
 	public void Open() {
-		_gateAnimator.SetBool("open", true);
+		if (_openTowardsRight)
+			_gateAnimator.SetBool("open", true);
+		else
+			_gateAnimator.SetBool("openInverse", true);
 	}
 
 	public void Close() {
-		_gateAnimator.SetBool("open", false);
+		if (_openTowardsRight)
+			_gateAnimator.SetBool("open", false);
+		else
+			_gateAnimator.SetBool("openInverse", false);
 	}
 }
