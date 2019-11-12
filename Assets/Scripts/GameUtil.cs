@@ -6,6 +6,7 @@ using UnityEngine;
 public enum LayerType {
     COLOR_OBJECT = 9,
     PLAYER = 10,
+    LEVEL = 11,
 }
 
 public class GameUtil : MonoBehaviour

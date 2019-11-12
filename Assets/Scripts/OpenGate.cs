@@ -9,11 +9,11 @@ public class OpenGate : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Shark")) {
+			Open();
 			SharkAttack sharkAttack = other.gameObject.GetComponentInChildren<SharkAttack>();
 			sharkAttack.DoPlayerDetection = false;
 			sharkAttack.FadeShark();
 			other.gameObject.GetComponent<Rigidbody>().useGravity = true;
-			Open();
 		}
 	}
 

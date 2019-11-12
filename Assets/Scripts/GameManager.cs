@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 	void Awake()
 	{
 		GameUtil.GameOver += OnGameOver;
+		RenderSettings.fog = true;
 	}
 
 	private void OnDestroy() {

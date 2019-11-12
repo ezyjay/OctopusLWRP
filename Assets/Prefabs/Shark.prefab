@@ -118,12 +118,12 @@ MonoBehaviour:
   _rotation: {fileID: 3999115061913708491}
   _lerp: 0
   _detectionDistance: 8
-  _timePlayerInRayBeforeAttack: 1
+  _timePlayerInRayBeforeAttack: 1.2
   _attackSpeed: 16
   _raycastOrigin: {fileID: 204474491392980695}
   _sphereCastRadius: 0.6
-  _exclamation: {fileID: 8590332460111106379}
-  fieldOfView: 35
+  _exclamation: {fileID: 1560623783555878055}
+  fieldOfView: 45
 --- !u!23 &7233161489288831416
 MeshRenderer:
   m_ObjectHideFlags: 0

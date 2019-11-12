@@ -10,7 +10,7 @@ public class SharkAttack : FollowTarget
    public float _attackSpeed;
    public Transform _raycastOrigin;
    public float _sphereCastRadius = 1.5f;
-   public GameObject _exclamation;
+   public SpriteRenderer _exclamation;
    public float fieldOfView = 20f;
 
    private RaycastHit _raycastHit;
@@ -30,7 +30,7 @@ public class SharkAttack : FollowTarget
 	   _playerColor = GameUtil.PlayerObject.GetComponent<ColorDetection>();
 	   _renderer = GetComponent<MeshRenderer>();
 	   _wanderPoints = _target as WanderBetweenPoints;
-	   _exclamation.SetActive(false);
+	   _exclamation.gameObject.SetActive(false);
    }
 
    protected override void FixedUpdate()
@@ -38,72 +38,102 @@ public class SharkAttack : FollowTarget
 		if (_doPlayerDetection) {
 
 			//Detect player
-			if (!_playerDetected) {
+			if (!_playerDetected) DetectPlayer();
 
-				if (GameUtil.PlayerObject)
-					_playerToSharkDirection = GameUtil.PlayerObject.transform.position - transform.position;
+			//If player detected, attack, otherwise do base movement
+			if (_playerDetected) DoAttack();	
+			else base.FixedUpdate();
+		}
+   }
+
+	private void DetectPlayer() {
+
+		//Get vector between shark and player
+		if (GameUtil.PlayerObject)
+			_playerToSharkDirection = GameUtil.PlayerObject.transform.position - transform.position;
 				
-				//If player is in field of view
-				if (Vector3.Angle(_direction, _playerToSharkDirection) < fieldOfView) {
-					
-					//Ray cast to see if not behind an obstacle
-					Debug.DrawRay(_raycastOrigin.position, _playerToSharkDirection.normalized * _detectionDistance, Color.red);
-					Physics.SphereCast(_raycastOrigin.position, _sphereCastRadius, _playerToSharkDirection, out _raycastHit, _detectionDistance);
-					if(_raycastHit.collider != null && _raycastHit.collider.CompareTag("Player")) {
-						if (_timePlayerDetected == 0f) {
-							_savedTarget = _raycastHit.point;
-							_timePlayerDetected = Time.time;
-							_exclamation.SetActive(true);
-						}
-						if (!_playerColor.IsHidden() && _timePlayerDetected != 0 && Time.time - _timePlayerDetected >= _timePlayerInRayBeforeAttack) {
-							_playerDetected = true;
-							_exclamation.SetActive(false);
-							_point1Position = transform.position;
-						}
-					} else {
-						_timePlayerDetected = 0f;
-						_exclamation.SetActive(false);
-					}
-				} else {
-					_timePlayerDetected = 0f;
-					_exclamation.SetActive(false);
-				}
-
-				
-			} 
-
-			//Attack if player detected
-			if (_playerDetected) 
-			{
-				Vector2 direction = (Vector2)transform.position - _savedTarget;
-				_rotation.RotateTowardsDirection(direction);
-
-				//Calculate target slighlty further than detected player
-				if (_targetPos == Vector2.zero)
-					_targetPos = (Vector2)_savedTarget + direction.normalized * -5;
-
-				//Move towards player
-				else {
-					transform.position = Vector3.MoveTowards(transform.position, _targetPos, _attackSpeed * Time.deltaTime);
-					
-					//Go back to normal behaviour after attack
-					if (Vector2.Distance(transform.position, _targetPos) < 1.5f ) {
-
-						if (Vector2.Distance(_point1Position, transform.position) > 10f) {
-							//TO DO: Test if point is not behind an obstacle
-							_wanderPoints._point1.position = _point1Position;
-							_wanderPoints._point2.position = transform.position;
-						}
-						_playerDetected = false;
-						_targetPos = Vector2.zero;
-					}
-				}
-
-			//If player not detected, do follow target from base class	
-			} else {
-				base.FixedUpdate();
-			}
+		//If player is in field of view
+		if (Vector3.Angle(_direction, _playerToSharkDirection) < fieldOfView) {
 			
+			//Ray cast to see if not behind an obstacle
+			Debug.DrawRay(_raycastOrigin.position, _playerToSharkDirection.normalized * _detectionDistance, Color.red);
+			Physics.SphereCast(_raycastOrigin.position, _sphereCastRadius, _playerToSharkDirection, out _raycastHit, _detectionDistance);
+
+			//If we've hit the player
+			if(_raycastHit.collider != null && _raycastHit.collider.CompareTag("Player")) {
+
+				//If we haven't started the timer start it, ie player just seen
+				if (_timePlayerDetected == 0f) {
+					_savedTarget = _raycastHit.point;
+					_timePlayerDetected = Time.time;
+					_exclamation.color = new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 0);
+					_exclamation.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+					_exclamation.gameObject.SetActive(true);
+				
+				//Timer has started, lerp indicators
+				} else {
+					_exclamation.transform.localScale = Vector3.Lerp(_exclamation.transform.localScale, Vector3.one * 0.1f, _timePlayerInRayBeforeAttack * Time.deltaTime);
+					_exclamation.color = Color.Lerp(_exclamation.color, new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 1), _timePlayerInRayBeforeAttack * Time.deltaTime);
+				}
+
+				//If the player can be detected and was seen for long enoug
+				if (!_playerColor.IsHidden() && _timePlayerDetected != 0 && Time.time - _timePlayerDetected >= _timePlayerInRayBeforeAttack) {
+					_playerDetected = true;
+					_exclamation.gameObject.SetActive(false);
+					_point1Position = transform.position;
+				}
+			}
+			//If raycast didn't hit the player, reset timer 
+			else {
+				_timePlayerDetected = 0f;
+				_exclamation.gameObject.SetActive(false);
+			}
+		} 
+		
+		//if player not in field of view, reset timer
+		else {
+			_timePlayerDetected = 0f;
+			_exclamation.gameObject.SetActive(false);
+		}
+
+	}
+
+   private void DoAttack() {
+
+	   Vector2 direction = (Vector2)transform.position - _savedTarget;
+		_rotation.RotateTowardsDirection(direction);
+
+		//Calculate target slighlty further than detected player
+		if (_targetPos == Vector2.zero) {
+
+			_targetPos = (Vector2)_savedTarget + direction.normalized * -5;
+
+			//If target pos is past an obstacle
+			RaycastHit hitInfo;
+			if  (Physics.Linecast(_raycastOrigin.position, _targetPos, out hitInfo, 1 << GameUtil.GetLayerMask(LayerType.LEVEL)))
+				_targetPos = hitInfo.point;
+		}
+
+		//Move towards player
+		else {
+			transform.position = Vector3.MoveTowards(transform.position, _targetPos, _attackSpeed * Time.deltaTime);
+			
+			//Go back to normal behaviour after attack
+			if (Vector2.Distance(transform.position, _targetPos) < 1.5f ) {
+
+				if (Vector2.Distance(_point1Position, transform.position) > 10f) {
+					
+					//If target pos is past an obstacle
+					RaycastHit hitInfo;
+					if  (Physics.Linecast(_raycastOrigin.position, _point1Position, out hitInfo, 1 << GameUtil.GetLayerMask(LayerType.LEVEL)))
+						_point1Position = hitInfo.point;
+
+					_wanderPoints._point1.position = _point1Position;
+					_wanderPoints._point2.position = transform.position;
+				}
+				_playerDetected = false;
+				_targetPos = Vector2.zero;
+			}
 		}
    }
 
