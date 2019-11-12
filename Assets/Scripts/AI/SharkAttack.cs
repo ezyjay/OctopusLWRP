@@ -65,6 +65,7 @@ public class SharkAttack : FollowTarget
 				//If we haven't started the timer start it, ie player just seen
 				if (_timePlayerDetected == 0f) {
 					_savedTarget = _raycastHit.point;
+					_point1Position = transform.position;
 					_timePlayerDetected = Time.time;
 					_exclamation.color = new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 0);
 					_exclamation.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
@@ -80,7 +81,6 @@ public class SharkAttack : FollowTarget
 				if (!_playerColor.IsHidden() && _timePlayerDetected != 0 && Time.time - _timePlayerDetected >= _timePlayerInRayBeforeAttack) {
 					_playerDetected = true;
 					_exclamation.gameObject.SetActive(false);
-					_point1Position = transform.position;
 				}
 			}
 			//If raycast didn't hit the player, reset timer 
@@ -110,8 +110,9 @@ public class SharkAttack : FollowTarget
 
 			//If target pos is past an obstacle
 			RaycastHit hitInfo;
-			if  (Physics.Linecast(_raycastOrigin.position, _targetPos, out hitInfo, 1 << GameUtil.GetLayerMask(LayerType.LEVEL)))
+			if  (Physics.Linecast(_raycastOrigin.position, _targetPos, out hitInfo, GameUtil.GetLayerMask(LayerType.LEVEL)))
 				_targetPos = hitInfo.point;
+				
 		}
 
 		//Move towards player
@@ -121,15 +122,16 @@ public class SharkAttack : FollowTarget
 			//Go back to normal behaviour after attack
 			if (Vector2.Distance(transform.position, _targetPos) < 1.5f ) {
 
-				if (Vector2.Distance(_point1Position, transform.position) > 10f) {
+				if (Vector2.Distance(_point1Position, _targetPos) > 10f) {
 					
 					//If target pos is past an obstacle
 					RaycastHit hitInfo;
-					if  (Physics.Linecast(_raycastOrigin.position, _point1Position, out hitInfo, 1 << GameUtil.GetLayerMask(LayerType.LEVEL)))
+					if  (Physics.Linecast(_raycastOrigin.position, _point1Position, out hitInfo, GameUtil.GetLayerMask(LayerType.LEVEL)))
 						_point1Position = hitInfo.point;
 
+					//Set next wander points
 					_wanderPoints._point1.position = _point1Position;
-					_wanderPoints._point2.position = transform.position;
+					_wanderPoints._point2.position = _targetPos;
 				}
 				_playerDetected = false;
 				_targetPos = Vector2.zero;
@@ -168,6 +170,9 @@ public class SharkAttack : FollowTarget
    void OnDrawGizmos()
    {
        Gizmos.DrawWireSphere(_raycastOrigin.position,_sphereCastRadius);
-       Gizmos.DrawWireSphere(_targetPos,1f);
+	   Gizmos.color = Color.yellow;
+       Gizmos.DrawWireSphere(_targetPos,0.2f);
+	   Gizmos.color = Color.green;
+	   Gizmos.DrawWireSphere(_point1Position,0.2f);
    }
 }

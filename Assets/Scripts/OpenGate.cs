@@ -6,14 +6,24 @@ public class OpenGate : MonoBehaviour
 {
 	public Animator _gateAnimator;
 	public bool _openTowardsRight = true;
+	public bool _isSolid = true;
 
 	private void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Shark")) {
-			Open();
-			SharkAttack sharkAttack = other.gameObject.GetComponentInChildren<SharkAttack>();
-			sharkAttack.DoPlayerDetection = false;
-			sharkAttack.FadeShark();
-			other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+
+			//If solid gate, shark dies
+			if(_isSolid) {
+				Open();
+				SharkAttack sharkAttack = other.gameObject.GetComponentInChildren<SharkAttack>();
+				sharkAttack.DoPlayerDetection = false;
+				sharkAttack.FadeShark();
+				other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+			}
+
+			//If wooden gate, gate breaks, shark continues
+			else {
+				Destroy(gameObject);
+			}
 		}
 	}
 
