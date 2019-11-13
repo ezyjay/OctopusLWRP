@@ -22,7 +22,14 @@ public class OpenGate : MonoBehaviour
 
 			//If wooden gate, gate breaks, shark continues
 			else {
-				Destroy(gameObject);
+				foreach (Transform t in transform) {
+					Rigidbody rb = t.GetComponent<Rigidbody>();
+					rb.isKinematic = false;
+					// if (_openTowardsRight)
+					// 	rb.AddForce(Vector2.right * 10,ForceMode.Impulse);
+					// else
+					// 	rb.AddForce(Vector2.left * 10,ForceMode.Impulse);
+				}
 			}
 		}
 	}
@@ -40,4 +47,5 @@ public class OpenGate : MonoBehaviour
 		else
 			_gateAnimator.SetBool("openInverse", false);
 	}
+
 }
