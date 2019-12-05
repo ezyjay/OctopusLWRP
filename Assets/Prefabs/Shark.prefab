@@ -117,13 +117,16 @@ MonoBehaviour:
   _onlyRotateInX: 0
   _rotation: {fileID: 3999115061913708491}
   _lerp: 0
+  _alwaysDetectPlayer: 0
+  _resetPlayerDetectedWhenOutOfRaycast: 0
   _detectionDistance: 8
-  _timePlayerInRayBeforeAttack: 1.2
-  _attackSpeed: 16
+  _timePlayerInRayBeforeAction: 1.2
+  _speedWhenDetected: 16
   _raycastOrigin: {fileID: 204474491392980695}
   _sphereCastRadius: 0.6
   _exclamation: {fileID: 1560623783555878055}
-  fieldOfView: 45
+  _useFieldOfView: 1
+  _fieldOfView: 45
 --- !u!23 &7233161489288831416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -268,7 +271,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bc9b25feacc1eef4a864e5d91d3befe6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

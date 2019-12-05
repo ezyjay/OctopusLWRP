@@ -2,103 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SharkAttack : FollowTarget
+public class SharkAttack : DetectPlayerFollowTarget
 {
-	[Header("Shark attack")]
-   public float _detectionDistance;
-   public float _timePlayerInRayBeforeAttack;
-   public float _attackSpeed;
-   public Transform _raycastOrigin;
-   public float _sphereCastRadius = 1.5f;
-   public SpriteRenderer _exclamation;
-   public float fieldOfView = 20f;
-
-   private RaycastHit _raycastHit;
-   private float _timePlayerDetected;
-   private bool _playerDetected;
    private ColorDetection _playerColor;
-   private bool _doPlayerDetection = true;
    private MeshRenderer _renderer;
 
    private Vector2 _targetPos = Vector2.zero;
-   private Vector2 _savedTarget, _playerToSharkDirection = Vector2.zero, _point1Position;
+   private Vector2 _savedTarget, _point1Position;
    private WanderBetweenPoints _wanderPoints;
 
-   public bool DoPlayerDetection { get => _doPlayerDetection; set => _doPlayerDetection = value; }
-
-   private void Awake() {
+   protected override void Awake() {
+	   base.Awake();
 	   _playerColor = GameUtil.PlayerObject.GetComponent<ColorDetection>();
 	   _renderer = GetComponent<MeshRenderer>();
 	   _wanderPoints = _target as WanderBetweenPoints;
-	   _exclamation.gameObject.SetActive(false);
    }
 
-   protected override void FixedUpdate()
-   {
-		if (_doPlayerDetection) {
-
-			//Detect player
-			if (!_playerDetected) DetectPlayer();
-
-			//If player detected, attack, otherwise do base movement
-			if (_playerDetected) DoAttack();	
-			else base.FixedUpdate();
-		}
-   }
-
-	private void DetectPlayer() {
-
-		//Get vector between shark and player
-		if (GameUtil.PlayerObject)
-			_playerToSharkDirection = GameUtil.PlayerObject.transform.position - transform.position;
-				
-		//If player is in field of view
-		if (Vector3.Angle(_direction, _playerToSharkDirection) < fieldOfView) {
-			
-			//Ray cast to see if not behind an obstacle
-			Debug.DrawRay(_raycastOrigin.position, _playerToSharkDirection.normalized * _detectionDistance, Color.red);
-			Physics.SphereCast(_raycastOrigin.position, _sphereCastRadius, _playerToSharkDirection, out _raycastHit, _detectionDistance);
-
-			//If we've hit the player
-			if(_raycastHit.collider != null && _raycastHit.collider.CompareTag("Player")) {
-
-				//If we haven't started the timer start it, ie player just seen
-				if (_timePlayerDetected == 0f) {
-					_savedTarget = _raycastHit.point;
-					_point1Position = transform.position;
-					_timePlayerDetected = Time.time;
-					_exclamation.color = new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 0);
-					_exclamation.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-					_exclamation.gameObject.SetActive(true);
-				
-				//Timer has started, lerp indicators
-				} else {
-					_exclamation.transform.localScale = Vector3.Lerp(_exclamation.transform.localScale, Vector3.one * 0.1f, _timePlayerInRayBeforeAttack * Time.deltaTime);
-					_exclamation.color = Color.Lerp(_exclamation.color, new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 1), _timePlayerInRayBeforeAttack * Time.deltaTime);
-				}
-
-				//If the player can be detected and was seen for long enoug
-				if (!_playerColor.IsHidden() && _timePlayerDetected != 0 && Time.time - _timePlayerDetected >= _timePlayerInRayBeforeAttack) {
-					_playerDetected = true;
-					_exclamation.gameObject.SetActive(false);
-				}
-			}
-			//If raycast didn't hit the player, reset timer 
-			else {
-				_timePlayerDetected = 0f;
-				_exclamation.gameObject.SetActive(false);
-			}
-		} 
-		
-		//if player not in field of view, reset timer
-		else {
-			_timePlayerDetected = 0f;
-			_exclamation.gameObject.SetActive(false);
-		}
-
+	protected override  void OnPlayerJustDetected() {
+		_savedTarget = _raycastHit.point;
+		_point1Position = transform.position;
+	}
+	
+	protected override bool PlayerDetectable() {
+		return !_playerColor.IsHidden();
 	}
 
-   private void DoAttack() {
+    protected override void PlayerDetectedBehaviour() {
 
 	   Vector2 direction = (Vector2)transform.position - _savedTarget;
 		_rotation.RotateTowardsDirection(direction);
@@ -117,7 +46,7 @@ public class SharkAttack : FollowTarget
 
 		//Move towards player
 		else {
-			transform.position = Vector3.MoveTowards(transform.position, _targetPos, _attackSpeed * Time.deltaTime);
+			transform.position = Vector3.MoveTowards(transform.position, _targetPos, _speedWhenDetected * Time.deltaTime);
 			
 			//Go back to normal behaviour after attack
 			if (Vector2.Distance(transform.position, _targetPos) < 1.5f ) {
