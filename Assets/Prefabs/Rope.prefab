@@ -932,9 +932,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3421311161368670564}
+  - component: {fileID: 969860948936991153}
   - component: {fileID: 6373870628877192876}
   - component: {fileID: 5365419806259898248}
   - component: {fileID: 1144528537458612057}
+  - component: {fileID: 5664225670041205541}
   m_Layer: 0
   m_Name: Rope
   m_TagString: Untagged
@@ -957,6 +959,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969860948936991153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810914923419763575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3559793c58a9764d8e03b052db52fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lastHingeJointRope: {fileID: 7788333972356569997}
 --- !u!54 &6373870628877192876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1076,9 +1091,23 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 2534964839176971238, guid: cfd4f12a95b34eb48894f1d11b14ea25, type: 3}
+--- !u!136 &5664225670041205541
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810914923419763575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.27000248
+  m_Height: 41.21942
+  m_Direction: 1
+  m_Center: {x: 0.0000024589503, y: 20.939842, z: 0.0000024559324}
 --- !u!1 &2406093276201692664
 GameObject:
   m_ObjectHideFlags: 0

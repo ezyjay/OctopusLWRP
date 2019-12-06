@@ -144,6 +144,11 @@ PrefabInstance:
       propertyPath: _lastHingeJointRope
       value: 
       objectReference: {fileID: 5721744276473677106}
+    - target: {fileID: 4468985058190694033, guid: 051d1ed926aeafc47b15b7c5451b1f65,
+        type: 3}
+      propertyPath: _ropeRB
+      value: 
+      objectReference: {fileID: 8864924582125522963}
     - target: {fileID: 4403253552228671344, guid: 051d1ed926aeafc47b15b7c5451b1f65,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -405,6 +410,12 @@ PrefabInstance:
 --- !u!4 &867207080162389979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3421311161368670564, guid: 214a71b923c9d3d4d828ae797cea05ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2554104357175762623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &8864924582125522963 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6373870628877192876, guid: 214a71b923c9d3d4d828ae797cea05ac,
     type: 3}
   m_PrefabInstance: {fileID: 2554104357175762623}
   m_PrefabAsset: {fileID: 0}
