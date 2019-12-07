@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6473466266463559494}
   m_Layer: 0
   m_Name: Buoy
-  m_TagString: Untagged
+  m_TagString: Buoy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,6 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 0.5
   _maxMoveSpeed: 0.8
+  _lastHingeJointRope: {fileID: 0}
+  _ropeRB: {fileID: 0}
 --- !u!33 &7937584095186051977
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74,7 +76,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2400498513c7d54190c10a3870e6ac0, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

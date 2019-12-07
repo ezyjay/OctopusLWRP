@@ -356,7 +356,7 @@ MonoBehaviour:
   _alwaysDetectPlayer: 1
   _resetPlayerDetectedWhenOutOfRaycast: 1
   _detectionDistance: 2
-  _timePlayerInRayBeforeAction: 0.5
+  _timePlayerInRayBeforeAction: 0.4
   _speedWhenDetected: 3
   _raycastOrigin: {fileID: 581250997008793889}
   _sphereCastRadius: 0.5

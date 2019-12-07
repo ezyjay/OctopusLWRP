@@ -14,6 +14,8 @@ public class Controller : MonoBehaviour
     private Vector2 _previousInputDirection = Vector2.zero;
     private float _inputDirectionToStartMoving = 0.4f;
 
+    public Vector2 InputDirection { get => _inputDirection; set => _inputDirection = value; }
+
     void Update()
     {
         _inputDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));

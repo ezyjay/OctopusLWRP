@@ -52,6 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gateAnimator: {fileID: 0}
   _openTowardsRight: 0
+  _openTowardsTop: 0
   _isSolid: 0
 --- !u!65 &9146557960808174714
 BoxCollider:

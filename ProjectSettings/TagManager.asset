@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shark
   - Crab
+  - Buoy
   layers:
   - Default
   - TransparentFX

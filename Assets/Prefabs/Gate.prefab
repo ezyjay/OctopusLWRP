@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gateAnimator: {fileID: 5633281988172372982}
   _openTowardsRight: 1
+  _openTowardsTop: 0
   _isSolid: 1
 --- !u!95 &5633281988172372982
 Animator:
@@ -62,8 +63,8 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b0797983c6ad3f34880ffad14f6b2457, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
