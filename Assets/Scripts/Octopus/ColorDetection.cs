@@ -18,9 +18,8 @@ public class ColorDetection : MonoBehaviour
     private bool _isOverColorObject;
 	private bool _hasAssimilatedColor;
 
-	public bool IsHidden() {
-		return _isOverColorObject && _hasAssimilatedColor;
-	}
+    public bool IsOverColorObject { get => _isOverColorObject; set => _isOverColorObject = value; }
+    public bool HasAssimilatedColor { get => _hasAssimilatedColor; set => _hasAssimilatedColor = value; }
 
     private void Awake() {
 		_renderer = GetComponent<MeshRenderer>();

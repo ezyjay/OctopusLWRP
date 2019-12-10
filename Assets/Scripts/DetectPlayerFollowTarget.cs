@@ -69,7 +69,7 @@ public class DetectPlayerFollowTarget : FollowTarget
 			if(_raycastHit.collider != null && _raycastHit.collider.CompareTag("Player")) {
 
 				//If we haven't started the timer start it, ie player just seen
-				if (_timePlayerDetected == 0f) {
+				if (_timePlayerDetected == 0f && PlayerDetectable()) {
 					OnPlayerJustDetected();
 					_timePlayerDetected = Time.time;
 					_exclamation.color = new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 0);

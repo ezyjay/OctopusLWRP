@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SharkAttack : DetectPlayerFollowTarget
 {
-   private ColorDetection _playerColor;
+   private PlayerHiddenState _playerHiddenState;
    private MeshRenderer _renderer;
 
    private Vector2 _targetPos = Vector2.zero;
@@ -13,7 +13,7 @@ public class SharkAttack : DetectPlayerFollowTarget
 
    protected override void Awake() {
 	   base.Awake();
-	   _playerColor = GameUtil.PlayerObject.GetComponent<ColorDetection>();
+	   _playerHiddenState = GameUtil.PlayerObject.GetComponent<PlayerHiddenState>();
 	   _renderer = GetComponent<MeshRenderer>();
 	   _wanderPoints = _target as WanderBetweenPoints;
    }
@@ -24,7 +24,7 @@ public class SharkAttack : DetectPlayerFollowTarget
 	}
 	
 	protected override bool PlayerDetectable() {
-		return !_playerColor.IsHidden();
+		return !_playerHiddenState.IsHidden();
 	}
 
     protected override void PlayerDetectedBehaviour() {
