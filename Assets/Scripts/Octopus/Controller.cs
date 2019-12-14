@@ -25,6 +25,13 @@ public class Controller : MonoBehaviour
         
         if (_inputDirection != Vector2.zero) { 
 
+			if (Mathf.Abs(_inputDirection.y) > 0.2f && Mathf.Abs(_inputDirection.x) > 0.2f) {
+				if(_rb.velocity.y == 0)
+					_inputDirection = new Vector2(_inputDirection.x, 0);
+				else if (_rb.velocity.x == 0)
+					_inputDirection = new Vector2(0, _inputDirection.y);
+			}
+
             _playerRotation.RotateTowardsDirection(_inputDirection);
 
             bool startMoving = Mathf.Abs(_inputDirection.x) > _inputDirectionToStartMoving || Mathf.Abs(_inputDirection.y) > _inputDirectionToStartMoving; 

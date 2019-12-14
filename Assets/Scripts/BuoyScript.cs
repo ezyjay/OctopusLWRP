@@ -21,6 +21,11 @@ public class BuoyScript : MonoBehaviour
 		}
 	}
 
+	private void OnDisable()
+	{
+		StopAllCoroutines();
+	}
+
 	private void Awake() {
 		_rb = GetComponent<Rigidbody>();
 	}

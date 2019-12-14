@@ -11,9 +11,9 @@ public class RopeScript : MonoBehaviour
 		_rb = GetComponent<Rigidbody>();
 	}
 
-	public void OnCollisionEnter(Collision other)
+	public void OnTriggerEnter(Collider other)
 	{
-		if ((other.collider.CompareTag("Shark") || other.collider.CompareTag("Crab")) && _lastHingeJointRope != null) {
+		if ((other.CompareTag("Shark") || other.CompareTag("Crab")) && _lastHingeJointRope != null) {
 			_lastHingeJointRope.gameObject.SetActive(false);
 			_rb.isKinematic = false;
 			StartCoroutine(WaitRopeFallen());

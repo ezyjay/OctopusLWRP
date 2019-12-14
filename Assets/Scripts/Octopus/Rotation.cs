@@ -18,7 +18,8 @@ public class Rotation : MonoBehaviour
         float yRotation = 0;
         if (previousInputDir.x > 0.1f) yRotation = 0f;
         else if (previousInputDir.x < -0.1f) yRotation = 180f;
-        else if (transform.rotation.eulerAngles.y > 90) yRotation = 180;
+        else if (transform.rotation.eulerAngles.y > 90f) yRotation = 180f;
+        else yRotation = 0;
 
         Vector3 rotation = AngleLerp(transform.rotation.eulerAngles, new Vector3(0, yRotation, 0), _rotationSpeed * Time.deltaTime);
         Quaternion quat = Quaternion.Euler(0, rotation.y, rotation.z);
@@ -39,12 +40,19 @@ public class Rotation : MonoBehaviour
         float yAngle = 0f;
         float zAngle = 0f;
 
-        if (normDir.x > 0.1f)
+        if (normDir.x > 0.1f) {
             yAngle = 0f;
-        else if (normDir.x < -0.1f)
+		} else if (normDir.x < -0.1f) {
             yAngle = 180f;
-        else
-            yAngle = transform.rotation.eulerAngles.y > 90 ? 180 : 0;
+        } else {
+			
+			if(normDir.y > 0.1f)
+				yAngle = 270;
+			else if (normDir.y < -0.1f)
+				yAngle = 90;
+			else
+            	yAngle = transform.rotation.eulerAngles.y > 90 ? 180 : 0;
+		}
 
         zAngle = normDir.y * 90;
 
