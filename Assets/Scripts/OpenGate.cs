@@ -24,6 +24,15 @@ public class OpenGate : MonoBehaviour
 		StopAllCoroutines();
 	}
 
+	private void OnCollisionEnter(Collision other)
+	{
+		if(other.collider.CompareTag("Boulder") && _isSolid) {
+			Boulder boulder = other.collider.GetComponent<Boulder>();
+			boulder.BreakBolder();
+			Open();
+		} 
+	}
+
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Shark")) {
@@ -41,11 +50,18 @@ public class OpenGate : MonoBehaviour
 			else OpenWoodGate();
 			
 		}
+		else {
 
-		if (other.CompareTag("Player"))
-			_collidingWithPlayer = true;
-		if (other.CompareTag("Buoy"))
-			_collidingWithBuoy = true;
+			if(other.CompareTag("Boulder") && !_isSolid)
+				OpenWoodGate(true, Vector2.down, 1);
+			else 
+			{
+				if (other.CompareTag("Player"))
+					_collidingWithPlayer = true;
+				if (other.CompareTag("Buoy"))
+					_collidingWithBuoy = true;
+			}
+		}
 	}
 
 	private void OnTriggerExit(Collider other) {
@@ -70,7 +86,7 @@ public class OpenGate : MonoBehaviour
 		yield return new WaitForSeconds(4f);
 		foreach (Transform t in transform) {
 			t.gameObject.SetActive(false);
-		yield return new WaitForSeconds(0.2f);
+			yield return new WaitForSeconds(0.2f);
 		}
 	}
 
@@ -86,7 +102,6 @@ public class OpenGate : MonoBehaviour
 	}
 
 	public void Open() {
-		_collider.enabled = false;
 		if (_openTowardsRight)
 			_gateAnimator.SetBool("open", true);
 		else if (_openTowardsTop)
