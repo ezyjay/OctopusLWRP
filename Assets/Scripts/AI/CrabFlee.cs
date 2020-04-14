@@ -14,7 +14,7 @@ public class CrabFlee : DetectPlayerFollowTarget {
 	//Flee when detected
 	protected override void PlayerDetectedBehaviour() {
 
-		Vector3 direction = transform.position - GameUtil.PlayerObject.transform.position;
+		Vector3 direction = transform.position - GameUtil.Player.gameObject.transform.position;
 		direction = new Vector3(direction.x + Mathf.Sign(direction.x)*4, direction.y, direction.z);
 		transform.position = Vector3.MoveTowards(transform.position, direction, _speedWhenDetected * Time.deltaTime);
 	

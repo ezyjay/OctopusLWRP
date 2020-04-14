@@ -11,7 +11,7 @@ public class PlayerHiddenState : MonoBehaviour
 
     private void Awake()
 	{
-		_colorDetection = GameUtil.PlayerObject.GetComponent<ColorDetection>();
+		_colorDetection = GameUtil.Player._colorDetection;
 	}
 
     public bool IsHidden() {

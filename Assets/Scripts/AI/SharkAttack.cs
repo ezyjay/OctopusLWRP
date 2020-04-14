@@ -13,7 +13,7 @@ public class SharkAttack : DetectPlayerFollowTarget
 
    protected override void Awake() {
 	   base.Awake();
-	   _playerHiddenState = GameUtil.PlayerObject.GetComponent<PlayerHiddenState>();
+	   _playerHiddenState = GameUtil.Player._hiddenState;
 	   _renderer = GetComponent<MeshRenderer>();
 	   _wanderPoints = _target as WanderBetweenPoints;
    }
@@ -91,7 +91,7 @@ public class SharkAttack : DetectPlayerFollowTarget
    private void OnCollisionEnter(Collision other) {
 	   
 	   if (other.collider.CompareTag("Player") && _doPlayerDetection) {
-			GameUtil.PlayerObject.SetActive(false);
+			GameUtil.Player.gameObject.SetActive(false);
 			GameUtil.ActivateGameOver();
 	   }
    }

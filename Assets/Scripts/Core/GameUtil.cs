@@ -11,9 +11,14 @@ public enum LayerType {
 
 public class GameUtil : MonoBehaviour
 {
-    private GameObject _playerObject;
-    public static GameObject PlayerObject { 
-        get => GameObject.FindGameObjectWithTag("Player");
+    private static Player _player;
+    public static Player Player { 
+        get {			
+			if(_player == null)
+				_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();		
+			
+			return _player;
+		}
     }
 
     public static LayerMask GetLayerMask(LayerType layerType) {
@@ -23,5 +28,15 @@ public class GameUtil : MonoBehaviour
 	public static event Action GameOver;
 	public static void ActivateGameOver() {
 		GameOver.Invoke();
+	}
+
+	public static bool IsColorEqual(Color a, Color b, float tolerance) {
+		Vector3 vectorA = new Vector3(a.r, a.g, a.b);
+		Vector3 vectorB = new Vector3(b.r, b.g, b.b);
+
+		if (Vector3.Distance(vectorA, vectorB) < tolerance)
+			return true;
+		
+		return false;
 	}
 }

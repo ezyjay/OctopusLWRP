@@ -13,10 +13,13 @@ public class OpenGate : MonoBehaviour
 	private Collider _collider;
 	private Controller _playerController;
 
+	private bool _isOpen = false;
+	public bool IsOpen { get => _isOpen; }
+
 	private void Awake()
 	{
 		_collider = gameObject.GetComponent<Collider>();
-		_playerController = GameUtil.PlayerObject.GetComponent<Controller>();
+		_playerController = GameUtil.Player._controller;
 	}
 
 	private void OnDisable()
@@ -108,6 +111,7 @@ public class OpenGate : MonoBehaviour
 			_gateAnimator.SetBool("openUp", true);
 		else
 			_gateAnimator.SetBool("openInverse", true);
+		_isOpen = true;
 	}
 
 	public void Close() {
@@ -117,6 +121,7 @@ public class OpenGate : MonoBehaviour
 			_gateAnimator.SetBool("openUp", false);
 		else
 			_gateAnimator.SetBool("openInverse", false);
+		_isOpen = false;
 	}
 
 }

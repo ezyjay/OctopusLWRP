@@ -20,6 +20,14 @@ public class ColorDetection : MonoBehaviour
 
     public bool IsOverColorObject { get => _isOverColorObject; set => _isOverColorObject = value; }
     public bool HasAssimilatedColor { get => _hasAssimilatedColor; set => _hasAssimilatedColor = value; }
+	public Color CurrentColor { 
+		get {
+			if (_hasAssimilatedColor)
+				return _newColor;
+			else
+				return _originalColor;
+		} 
+	}
 
     private void Awake() {
 		_renderer = GetComponent<MeshRenderer>();
@@ -63,7 +71,7 @@ public class ColorDetection : MonoBehaviour
         if (_doColorLerp) {
 			Color color = Color.Lerp(_oldColor, _newColor, _timer);
 			if (_timer < 1) _timer += Time.deltaTime/_colorLerpTime;
-            _renderer.material.SetColor("_BaseColor",color);
+            _renderer.material.SetColor("_BaseColor", color);
 
 			if (_timer >= 1) {
 				_doColorLerp = false;

@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class HidePlayer : MonoBehaviour
 {
-	private PlayerHiddenState _playerHiddenState;
-
-	private void Awake()
-	{
-		_playerHiddenState = GameUtil.PlayerObject.GetComponent<PlayerHiddenState>();
-	}
-
    	private void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Player")) {
-			_playerHiddenState.IsHiddenByEnvironment = true;
+			GameUtil.Player._hiddenState.IsHiddenByEnvironment = true;
 		}
    	}
 
    	private void OnTriggerExit(Collider other) {
 		if (other.CompareTag("Player")) {
-			_playerHiddenState.IsHiddenByEnvironment = false;
+			GameUtil.Player._hiddenState.IsHiddenByEnvironment = false;
 		}
    	}
 }

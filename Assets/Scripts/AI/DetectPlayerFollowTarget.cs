@@ -56,8 +56,7 @@ public class DetectPlayerFollowTarget : FollowTarget
 	protected virtual void DetectPlayer() {
 
 		//Get vector between shark and player
-		if (GameUtil.PlayerObject)
-			_playerToObjectDirection = GameUtil.PlayerObject.transform.position - transform.position;
+		_playerToObjectDirection = GameUtil.Player.gameObject.transform.position - transform.position;
 				
 		if (IsPlayerInFieldOfView()) {
 			
