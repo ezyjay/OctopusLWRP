@@ -5,10 +5,8 @@ using UnityEngine;
 public class ColorGateButton : GateButton
 {
 	public Color _buttonColor;
-	public float _detectionTime = 1f;
 	public float _equalColorTolerance = 0.2f;
 
-	private float _enterTriggerTime = 0f;
 	private bool _isColorEqual = false;
 
     private void OnTriggerStay(Collider other) {
