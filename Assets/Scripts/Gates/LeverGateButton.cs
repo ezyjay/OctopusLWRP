@@ -4,9 +4,22 @@ using UnityEngine;
 
 public class LeverGateButton : GateButton
 {
+	[Header("Lever specific")]
+	public LeverPosition _leverPosition;
+	public float _minDistanceForValidation = 1f;
+
+	private bool IsLeverActivated() {
+		return Vector3.Distance(_leverPosition._leverHandle.position, _leverPosition._rightSide.position) <= _minDistanceForValidation;
+	}
+
+	private void Update() {
+		if (_gate.IsOpen && !IsLeverActivated())
+			CloseGate();
+	}
+
     private void OnTriggerStay(Collider other) {
 		
-		if (other.CompareTag("Player") && !_gate.IsOpen) {
+		if (!_gate.IsOpen && IsLeverActivated()) {
 			
 			if (_enterTriggerTime == 0f) 
 			{

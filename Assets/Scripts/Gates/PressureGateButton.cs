@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PressureGateButton : GateButton
 {
+	[Header("Pressure button specific")]
 	public Transform _button;
 
     private void OnTriggerStay(Collider other) {

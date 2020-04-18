@@ -180,6 +180,11 @@ PrefabInstance:
       propertyPath: _gate
       value: 
       objectReference: {fileID: 611445459746769880}
+    - target: {fileID: 587534327473981101, guid: 8032bc7438e692841972570e906d0646,
+        type: 3}
+      propertyPath: _detectionTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3976186186907598426, guid: 8032bc7438e692841972570e906d0646,
         type: 3}
       propertyPath: m_Size.x

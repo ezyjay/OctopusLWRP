@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColorGateButton : GateButton
 {
+	[Header("Color button specific")]
 	public Color _validButtonColor;
 	public float _equalColorTolerance = 0.2f;
 	public Color _gateOpenColor, _invalidColor;
