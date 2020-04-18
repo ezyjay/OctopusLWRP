@@ -12,4 +12,8 @@ public class GateButton : MonoBehaviour
 	public void OpenGate() {
 		_gate.Open();
 	}
+
+	public void CloseGate() {
+		_gate.Close();
+	}
 }

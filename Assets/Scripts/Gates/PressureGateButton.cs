@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PressureGateButton : GateButton
 {
+	public Transform _button;
+
     private void OnTriggerStay(Collider other) {
 		
-		if (other.CompareTag("Boulder") && !_gate.IsOpen) {
+		if (!_gate.IsOpen && _button.localPosition.y < 0) {
 			
 			if (_enterTriggerTime == 0f) 
 			{
@@ -16,6 +18,13 @@ public class PressureGateButton : GateButton
 			if (_enterTriggerTime > 0f && Time.time - _enterTriggerTime > _detectionTime) {
 				OpenGate();
 			}
+		}
+	}
+
+	private void Update()
+	{
+		if (_button.localPosition.y > 0 && _gate.IsOpen) {
+			CloseGate();
 		}
 	}
 }
