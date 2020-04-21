@@ -7,6 +7,8 @@ public enum LayerType {
     COLOR_OBJECT = 9,
     PLAYER = 10,
     LEVEL = 11,
+	HIDE_OBJECT = 12,
+	USE_COLOR_OBJECT = 13
 }
 
 public class GameUtil : MonoBehaviour

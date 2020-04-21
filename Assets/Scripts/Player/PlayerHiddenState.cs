@@ -15,6 +15,6 @@ public class PlayerHiddenState : MonoBehaviour
 	}
 
     public bool IsHidden() {
-		return _colorDetection.IsOverColorObject && _colorDetection.HasAssimilatedColor || _isHiddenByEnvironment;
+		return (_colorDetection.IsOverColorObject || _colorDetection.IsOverUseColorObject) && _colorDetection.HasAssimilatedColor || _isHiddenByEnvironment;
 	}
 }

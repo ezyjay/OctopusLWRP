@@ -15,11 +15,13 @@ public class ColorDetection : MonoBehaviour
 	private float _timer = 0;
     private bool _doColorLerp, _doInverseColorLerp;
     private float _timeChangedColor = 0f;
-    private bool _isOverColorObject;
+    private bool _isOverColorObject, _isOverUseColorObject;
 	private bool _hasAssimilatedColor;
 
     public bool IsOverColorObject { get => _isOverColorObject; set => _isOverColorObject = value; }
+    public bool IsOverUseColorObject { get => _isOverUseColorObject; set => _isOverUseColorObject = value; }
     public bool HasAssimilatedColor { get => _hasAssimilatedColor; set => _hasAssimilatedColor = value; }
+
 	public Color CurrentColor { 
 		get {
 			if (_hasAssimilatedColor)
@@ -43,10 +45,17 @@ public class ColorDetection : MonoBehaviour
     {
         //Are we over a color giving object ?
 		Debug.DrawRay(_raycastOrigin.position, Vector3.forward * 500);
-        if (Physics.SphereCast(_raycastOrigin.position, 0.4f, Vector3.forward * 500, out _raycastHit, 500, GameUtil.GetLayerMask(LayerType.COLOR_OBJECT)))
+        if (Physics.SphereCast(_raycastOrigin.position, 0.4f, Vector3.forward * 500, out _raycastHit, 500, GameUtil.GetLayerMask(LayerType.COLOR_OBJECT))) {
             _isOverColorObject = true;
-        else
+			_isOverUseColorObject = false;
+        } else if (Physics.SphereCast(_raycastOrigin.position, 0.4f, Vector3.forward * 500, out _raycastHit, 500, GameUtil.GetLayerMask(LayerType.USE_COLOR_OBJECT))) {
+			_isOverUseColorObject = true;
+			_isOverColorObject = false;
+		}
+		else {
             _isOverColorObject = false;
+			_isOverUseColorObject = false;
+		}
 
         //Have we clicked mouse button
         if (Input.GetMouseButtonDown(0) && _isOverColorObject) 
