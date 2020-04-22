@@ -90,7 +90,7 @@ public class SharkAttack : DetectPlayerFollowTarget
 
    private void OnCollisionEnter(Collision other) {
 	   
-	   if (other.collider.CompareTag("Player") && _doPlayerDetection) {
+	   if (other.collider.CompareTag("Player") && _doPlayerDetection && !GameUtil.Player._isInvinsible) {
 			GameUtil.Player.gameObject.SetActive(false);
 			GameUtil.ActivateGameOver();
 	   }

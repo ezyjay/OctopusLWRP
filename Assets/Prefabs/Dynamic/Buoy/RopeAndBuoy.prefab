@@ -149,11 +149,6 @@ PrefabInstance:
       propertyPath: _ropeRB
       value: 
       objectReference: {fileID: 8864924582125522963}
-    - target: {fileID: 4403253552228671344, guid: 051d1ed926aeafc47b15b7c5451b1f65,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051d1ed926aeafc47b15b7c5451b1f65, type: 3}
 --- !u!1 &456457489552083432 stripped

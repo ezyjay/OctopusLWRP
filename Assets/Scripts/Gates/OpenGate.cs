@@ -76,7 +76,7 @@ public class OpenGate : MonoBehaviour
 
 	private void OnTriggerStay(Collider other) {
 		if ((other.CompareTag("Player") || other.CompareTag("Buoy")) && _collidingWithPlayer && _collidingWithBuoy) {
-			if (_playerController.InputDirection.y > 0.1f && _playerController._rb.velocity.y > 2f) {
+			if (_playerController.InputDirection.y > 0.1f && _playerController._rb.velocity.y > 2.5f) {
 				if (_isSolid)
 					Open();
 				else
