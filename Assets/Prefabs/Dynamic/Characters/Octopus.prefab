@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 2078554088177199082}
   - component: {fileID: 806840892880929565}
   - component: {fileID: 3666607739125029454}
+  - component: {fileID: 8880993400243869481}
   m_Layer: 10
   m_Name: Octopus
   m_TagString: Player
@@ -56,6 +57,7 @@ MonoBehaviour:
   _controller: {fileID: 6065239101049361074}
   _hiddenState: {fileID: 749607915911661681}
   _colorDetection: {fileID: 8491642877983432761}
+  _isInvinsible: 0
 --- !u!114 &6065239101049361074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +182,7 @@ MeshCollider:
   m_GameObject: {fileID: 2707916880846933200}
   m_Material: {fileID: 13400000, guid: 90ccbff2ac535414a958ed4413b8a896, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -201,6 +203,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 1
+--- !u!136 &8880993400243869481
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2707916880846933200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.8
+  m_Direction: 0
+  m_Center: {x: 0, y: 0, z: -0.000000059604645}
 --- !u!1 &8733696550707956170
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8733696550707956170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33, y: 0.22, z: -0.38399994}
+  m_LocalPosition: {x: 0.04, y: 0.09, z: -0.38399994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5495512659890365866}

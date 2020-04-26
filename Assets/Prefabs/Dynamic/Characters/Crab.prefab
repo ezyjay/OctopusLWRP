@@ -347,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 9067338078611071492}
   _offset: {x: 0, y: 0}
-  _moveTime: 0.1
+  _moveTime: 0.3
   _onlyFollowInX: 1
   _rotate: 0
   _onlyRotateInX: 0
@@ -356,10 +356,10 @@ MonoBehaviour:
   _alwaysDetectPlayer: 1
   _resetPlayerDetectedWhenOutOfRaycast: 1
   _detectionDistance: 2
-  _timePlayerInRayBeforeAction: 0.4
-  _speedWhenDetected: 3
+  _timePlayerInRayBeforeAction: 5
+  _speedWhenDetected: 2.5
   _raycastOrigin: {fileID: 581250997008793889}
-  _sphereCastRadius: 0.5
+  _sphereCastRadius: 0.2
   _exclamation: {fileID: 1386800577019328557}
   _useFieldOfView: 0
   _fieldOfView: 0

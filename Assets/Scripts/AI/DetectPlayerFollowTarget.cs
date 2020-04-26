@@ -33,11 +33,14 @@ public class DetectPlayerFollowTarget : FollowTarget
 			if (_doPlayerDetection) {
 
 				//Detect player
-				if (_alwaysDetectPlayer || !_alwaysDetectPlayer && !_playerDetected) DetectPlayer();
+				if (_alwaysDetectPlayer || !_alwaysDetectPlayer && !_playerDetected) 
+					DetectPlayer();
 
 				//If player detected, attack, otherwise do base movement
-				if (_playerDetected) PlayerDetectedBehaviour();	
-				else base.FixedUpdate();
+				if (_playerDetected) 
+					PlayerDetectedBehaviour();	
+				else 
+					base.FixedUpdate();
 			}
 	}
 
@@ -49,23 +52,25 @@ public class DetectPlayerFollowTarget : FollowTarget
 		return true;
 	}
 
-	private bool IsPlayerInFieldOfView() {
+	protected bool IsPlayerInFieldOfView() {
 		return !_useFieldOfView || _useFieldOfView && Vector3.Angle(_direction, _playerToObjectDirection) < _fieldOfView;
 	}
 
 	protected virtual void DetectPlayer() {
 
 		//Get vector between shark and player
-		_playerToObjectDirection = GameUtil.Player.gameObject.transform.position - transform.position;
+		_playerToObjectDirection = GameUtil.Player.transform.position - transform.position;
 				
 		if (IsPlayerInFieldOfView()) {
 			
 			//Ray cast to see if not behind an obstacle
-			Debug.DrawRay(_raycastOrigin.position, _playerToObjectDirection.normalized * _detectionDistance, Color.red);
+			Debug.DrawRay(_raycastOrigin.position, _playerToObjectDirection.normalized * _detectionDistance, Color.green);
 			Physics.SphereCast(_raycastOrigin.position, _sphereCastRadius, _playerToObjectDirection, out _raycastHit, _detectionDistance);
 
 			//If we've hit the player
 			if(_raycastHit.collider != null && _raycastHit.collider.CompareTag("Player")) {
+
+				Debug.DrawRay(_raycastOrigin.position, _playerToObjectDirection.normalized * _detectionDistance, Color.red);
 
 				//If we haven't started the timer start it, ie player just seen
 				if (_timePlayerDetected == 0f && PlayerDetectable()) {
@@ -79,15 +84,16 @@ public class DetectPlayerFollowTarget : FollowTarget
 				} else {
 					_exclamation.transform.localScale = Vector3.Lerp(_exclamation.transform.localScale, Vector3.one * 0.1f, _timePlayerInRayBeforeAction * Time.deltaTime);
 					_exclamation.color = Color.Lerp(_exclamation.color, new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 1), _timePlayerInRayBeforeAction * Time.deltaTime);
+					
 				}
 
 				//If the player can be detected and was seen for long enoug
-				if (PlayerDetectable() && _timePlayerDetected != 0 && Time.time - _timePlayerDetected >= _timePlayerInRayBeforeAction) {
+				if (PlayerDetectable() && (_alwaysDetectPlayer || _timePlayerDetected != 0 && Time.time - _timePlayerDetected >= _timePlayerInRayBeforeAction)) {
 					_playerDetected = true;
 				}
 			}
 			//If raycast didn't hit the player, reset timer 
-			else {
+			else if (Time.time - _timePlayerDetected > 0.2f) {
 				_timePlayerDetected = 0f;
 				_exclamation.gameObject.SetActive(false);
 				if (_resetPlayerDetectedWhenOutOfRaycast)
@@ -101,5 +107,10 @@ public class DetectPlayerFollowTarget : FollowTarget
 			_timePlayerDetected = 0f;
 			_exclamation.gameObject.SetActive(false);
 		}
+	}
+
+	void OnDrawGizmos()
+	{
+		Gizmos.DrawWireSphere(_raycastOrigin.position, _sphereCastRadius);
 	}
 }
