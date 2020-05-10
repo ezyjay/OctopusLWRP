@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObjectTarget : MonoBehaviour
 {
-    protected Vector2 _currentTarget;
-    public Vector2 CurrentTarget { get => _currentTarget; set => _currentTarget = value; }
+    protected Vector3 _currentTarget;
+    public Vector3 CurrentTarget { get => _currentTarget; set => _currentTarget = value; }
 
     void FixedUpdate()
     {

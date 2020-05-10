@@ -7,8 +7,8 @@ public class ColorDetection : MonoBehaviour
     public Transform _raycastOrigin;
     public float _colorLerpTime = 2f;
     public float _timeToStayNewColorOnLeave = 3f;
+	public SkinnedMeshRenderer _renderer;
 
-	private MeshRenderer _renderer;
     private Color _originalColor;
     private Color _oldColor, _newColor;
     private RaycastHit _raycastHit;
@@ -32,7 +32,6 @@ public class ColorDetection : MonoBehaviour
 	}
 
     private void Awake() {
-		_renderer = GetComponent<MeshRenderer>();
         _originalColor = _renderer.material.GetColor("_BaseColor");
 		_newColor = _renderer.material.GetColor("_BaseColor");
     }

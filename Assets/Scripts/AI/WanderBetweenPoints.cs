@@ -18,7 +18,7 @@ public class WanderBetweenPoints : ObjectTarget
     }
 
     public void ChangeTarget() {
-        if (_currentTarget == (Vector2)_point1.position)
+        if ((Vector2)_currentTarget == (Vector2)_point1.position)
             _currentTarget = _point2.position;
         else
             _currentTarget = _point1.position;
