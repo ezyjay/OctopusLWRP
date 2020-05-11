@@ -99,15 +99,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.7999999
       objectReference: {fileID: 0}
+    - target: {fileID: 5483897964817401871, guid: 3dd6b43dda40b264c80e4a767b3ae1d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.502
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483897964817401871, guid: 3dd6b43dda40b264c80e4a767b3ae1d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.299
+      objectReference: {fileID: 0}
+    - target: {fileID: 392494822, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
+      propertyPath: Destination
+      value: 
+      objectReference: {fileID: 622912863813036512}
     - target: {fileID: 735351432, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
-      propertyPath: Destination
-      value: 
-      objectReference: {fileID: 622912863813036512}
-    - target: {fileID: 1222193954, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
-      propertyPath: Destination
-      value: 
-      objectReference: {fileID: 622912863813036512}
-    - target: {fileID: 1348869284, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
       propertyPath: Destination
       value: 
       objectReference: {fileID: 622912863813036512}
@@ -119,15 +125,19 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 622912863813036512}
-    - target: {fileID: 392494822, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
+    - target: {fileID: 1222193954, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
       propertyPath: Destination
       value: 
       objectReference: {fileID: 622912863813036512}
-    - target: {fileID: 1675492264, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
+    - target: {fileID: 1348869284, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
       propertyPath: Destination
       value: 
       objectReference: {fileID: 622912863813036512}
     - target: {fileID: 1412459996, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
+      propertyPath: Destination
+      value: 
+      objectReference: {fileID: 622912863813036512}
+    - target: {fileID: 1675492264, guid: 3dd6b43dda40b264c80e4a767b3ae1d0, type: 3}
       propertyPath: Destination
       value: 
       objectReference: {fileID: 622912863813036512}
@@ -211,6 +221,11 @@ PrefabInstance:
     - target: {fileID: 1861351396143004409, guid: a502c3faadab7f04e805afd6c8e9e731,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861351396143004409, guid: a502c3faadab7f04e805afd6c8e9e731,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1861351396143004408, guid: a502c3faadab7f04e805afd6c8e9e731,
