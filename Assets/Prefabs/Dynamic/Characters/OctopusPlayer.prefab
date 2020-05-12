@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -60
+  MaxAngle: 60
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -32,8 +32,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -95
+  MaxAngle: 95
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -81,8 +81,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -50
+  MaxAngle: 50
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -70
+  MaxAngle: 70
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -248,6 +248,51 @@ MonoBehaviour:
   TorsionWeight: 0
   TorsionPenality: {x: 0, y: 0, z: 1}
   DebugDraw: 1
+--- !u!1 &350116089684768815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 291249780540128940}
+  - component: {fileID: 316685575993248057}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &291249780540128940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350116089684768815}
+  m_LocalRotation: {x: 0, y: 0, z: -0.26387298, w: -0.96455747}
+  m_LocalPosition: {x: 0.667, y: -0.54, z: -0.034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2054600374513274313}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 30.6}
+--- !u!136 &316685575993248057
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350116089684768815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.28
+  m_Height: 1.08
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: -0.21}
 --- !u!114 &671689635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,8 +306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -77.72727
+  MaxAngle: 77.72727
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -310,8 +355,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -329,8 +374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -90
+  MaxAngle: 90
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -348,8 +393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -52.5
+  MaxAngle: 52.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -397,8 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -95
+  MaxAngle: 95
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -416,8 +461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -57.5
+  MaxAngle: 57.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -435,8 +480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -470,8 +515,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -32.592594
+  MaxAngle: 32.592594
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -489,8 +534,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -87.5
+  MaxAngle: 87.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -524,8 +569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -87.03703
+  MaxAngle: 87.03703
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -573,8 +618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -63.793102
+  MaxAngle: 63.793102
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -608,8 +653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -50.74074
+  MaxAngle: 50.74074
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -627,8 +672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -66.206894
+  MaxAngle: 66.206894
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -657,12 +702,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971818246017231439}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.8410006, y: -1.533, z: 0.7700002}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.1900003, y: -1.53, z: 0.7699999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 8
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6563336763508472572
 MonoBehaviour:
@@ -689,8 +734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -72.5
+  MaxAngle: 72.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -708,8 +753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -57.5
+  MaxAngle: 57.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -727,8 +772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -881,8 +926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -65
+  MaxAngle: 65
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -930,8 +975,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -65
+  MaxAngle: 65
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1067,8 +1112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -87.93104
+  MaxAngle: 87.93104
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1086,8 +1131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -50
+  MaxAngle: 50
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1210,8 +1255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1229,8 +1274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -51.875
+  MaxAngle: 51.875
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1248,8 +1293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -87.27273
+  MaxAngle: 87.27273
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1283,8 +1328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -55.925926
+  MaxAngle: 55.925926
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1302,8 +1347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -92.5
+  MaxAngle: 92.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1321,8 +1366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -75.9375
+  MaxAngle: 75.9375
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1370,8 +1415,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -67.5
+  MaxAngle: 67.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1405,8 +1450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1424,8 +1469,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1454,7 +1499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605447004946586306}
   m_LocalRotation: {x: -0.6955683, y: 0.08373523, z: -0.007258773, w: 0.7135268}
-  m_LocalPosition: {x: 0.07, y: 0.11, z: -0.02}
+  m_LocalPosition: {x: -0.28, y: 0.11, z: -0.02}
   m_LocalScale: {x: 0.5, y: 0.50000024, z: 0.14000005}
   m_Children: []
   m_Father: {fileID: 6783693166118317232}
@@ -1473,8 +1518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -44.482758
+  MaxAngle: 44.482758
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1533,12 +1578,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671799995901044477}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.8010008, y: 0.52699995, z: -0.6800001}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.1500006, y: 0.53, z: -0.67999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 4
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5609342584185611713
 MonoBehaviour:
@@ -1565,8 +1610,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -46.896553
+  MaxAngle: 46.896553
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1584,8 +1629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -90
+  MaxAngle: 90
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1603,8 +1648,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -80.3125
+  MaxAngle: 80.3125
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1638,8 +1683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -68.88889
+  MaxAngle: 68.88889
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1657,8 +1702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -42.068966
+  MaxAngle: 42.068966
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1676,8 +1721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -74.545456
+  MaxAngle: 74.545456
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1695,8 +1740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -68.62069
+  MaxAngle: 68.62069
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1714,12 +1759,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
   Speed: 1
+--- !u!1 &2069979256115404050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3515877490198911754}
+  m_Layer: 0
+  m_Name: TentaclesTargets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3515877490198911754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069979256115404050}
+  m_LocalRotation: {x: -0, y: -0, z: -3.8787099e-10, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7586743041468516807}
+  - {fileID: 1139343902696201511}
+  - {fileID: 6917385178978198935}
+  - {fileID: 8992864000753852435}
+  - {fileID: 1127008524652290320}
+  - {fileID: 2008258191212012914}
+  - {fileID: 4553551099041932855}
+  - {fileID: 2206436591059505252}
+  m_Father: {fileID: 8641906656850562129}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &326108755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,8 +1832,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -94.81481
+  MaxAngle: 94.81481
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1765,9 +1848,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6170930247029077179}
   - component: {fileID: 5118264429896854376}
-  - component: {fileID: 5984260265978261431}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Head
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1780,13 +1862,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107745484606109678}
-  m_LocalRotation: {x: -0.16371131, y: -0.98268723, z: -0.080810554, w: -0.031528376}
-  m_LocalPosition: {x: 0.89, y: 0.2, z: -0.12}
+  m_LocalRotation: {x: 0, y: 0, z: -0.016579883, w: -0.99986255}
+  m_LocalPosition: {x: -0.013, y: -0.021, z: 0.073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
+  m_Father: {fileID: 2054600374513274313}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -8.54, y: -185.13, z: 19.3}
+  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 1.9}
 --- !u!136 &5118264429896854376
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1797,24 +1879,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3
+  m_Radius: 0.32
   m_Height: 1.27
   m_Direction: 0
   m_Center: {x: 0.26, y: -0.1, z: -0.17}
---- !u!136 &5984260265978261431
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107745484606109678}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.28
-  m_Height: 0.82
-  m_Direction: 1
-  m_Center: {x: 0.6, y: -0.63, z: -0.21}
 --- !u!1 &2114406737896387834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,6 +1941,50 @@ MonoBehaviour:
   _movementVariance: {x: 0, y: 3, z: 0}
   _movePositionOut: {fileID: 3676411026638175413}
   _movePositionIn: {fileID: 6127217769923640220}
+--- !u!1 &2125495684830164302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1414124609982093653}
+  - component: {fileID: 4737326395216299837}
+  m_Layer: 0
+  m_Name: Nose
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1414124609982093653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125495684830164302}
+  m_LocalRotation: {x: 0, y: 0, z: -0.016579883, w: -0.99986255}
+  m_LocalPosition: {x: -0.251, y: -0.077, z: -0.077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2054600374513274313}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 1.9}
+--- !u!135 &4737326395216299837
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125495684830164302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &619641578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,8 +1998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -93.63637
+  MaxAngle: 93.63637
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1905,8 +2017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -40
+  MaxAngle: 40
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1924,8 +2036,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -54.0625
+  MaxAngle: 54.0625
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1943,8 +2055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -90
+  MaxAngle: 90
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1962,8 +2074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -35
+  MaxAngle: 35
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -1981,8 +2093,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -56.25
+  MaxAngle: 56.25
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2046,8 +2158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -61.11111
+  MaxAngle: 61.11111
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2065,8 +2177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -45
+  MaxAngle: 45
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2084,8 +2196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -85
+  MaxAngle: 85
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2103,8 +2215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -49.6875
+  MaxAngle: 49.6875
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2168,8 +2280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -76.66667
+  MaxAngle: 76.66667
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2187,8 +2299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -58.4375
+  MaxAngle: 58.4375
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2217,12 +2329,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2762140131351144920}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.8310003, y: -0.7930001, z: -1.12}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.1800003, y: -0.79, z: -1.1200001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 6
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1290644278061753901
 MonoBehaviour:
@@ -2249,8 +2361,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -37.5
+  MaxAngle: 37.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2298,8 +2410,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -35
+  MaxAngle: 35
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2347,8 +2459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -32.5
+  MaxAngle: 32.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2366,8 +2478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -87.5
+  MaxAngle: 87.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2385,8 +2497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -71.36363
+  MaxAngle: 71.36363
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2404,8 +2516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -37.5
+  MaxAngle: 37.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2453,8 +2565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -80
+  MaxAngle: 80
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2488,8 +2600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -42.962963
+  MaxAngle: 42.962963
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2507,8 +2619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -55
+  MaxAngle: 55
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2526,8 +2638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -55.454548
+  MaxAngle: 55.454548
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2575,8 +2687,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -89.0625
+  MaxAngle: 89.0625
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2594,12 +2706,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -85.51724
+  MaxAngle: 85.51724
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
   Speed: 1
+--- !u!1 &3430387735640707193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6111247749861326930}
+  - component: {fileID: 6230109796347060790}
+  m_Layer: 0
+  m_Name: Body (1)
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6111247749861326930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430387735640707193}
+  m_LocalRotation: {x: 0, y: 0, z: -0.57664627, w: -0.81699395}
+  m_LocalPosition: {x: 0.667, y: -0.259, z: 0.058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2054600374513274313}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 70.43}
+--- !u!136 &6230109796347060790
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430387735640707193}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.27
+  m_Height: 1.2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: -0.21}
 --- !u!114 &2046453053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2613,8 +2770,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -93.4375
+  MaxAngle: 93.4375
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2648,8 +2805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -81.85185
+  MaxAngle: 81.85185
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2683,8 +2840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -63.703705
+  MaxAngle: 63.703705
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2732,8 +2889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -73.44827
+  MaxAngle: 73.44827
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2751,8 +2908,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -82.5
+  MaxAngle: 82.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2770,8 +2927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -68.181816
+  MaxAngle: 68.181816
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2789,8 +2946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -40
+  MaxAngle: 40
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2808,8 +2965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -45.3125
+  MaxAngle: 45.3125
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2827,8 +2984,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -97.586205
+  MaxAngle: 97.586205
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2846,8 +3003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -32.5
+  MaxAngle: 32.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2865,8 +3022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -40.9375
+  MaxAngle: 40.9375
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2884,8 +3041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -47.5
+  MaxAngle: 47.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2903,8 +3060,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -92.5
+  MaxAngle: 92.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2922,8 +3079,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -42.5
+  MaxAngle: 42.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2941,12 +3098,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -49.310345
+  MaxAngle: 49.310345
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
   Speed: 1
+--- !u!1 &3837279601392684821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8641906656850562129}
+  m_Layer: 0
+  m_Name: Tentacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8641906656850562129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837279601392684821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2259503532917153234}
+  - {fileID: 3515877490198911754}
+  m_Father: {fileID: 6783693166118317232}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &190361956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2976,8 +3165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -79.25926
+  MaxAngle: 79.25926
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -2995,8 +3184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -32.5
+  MaxAngle: 32.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3030,8 +3219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -35.185184
+  MaxAngle: 35.185184
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3049,8 +3238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3068,8 +3257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3087,8 +3276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -67.1875
+  MaxAngle: 67.1875
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3106,8 +3295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -78.125
+  MaxAngle: 78.125
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3183,8 +3372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -34.827587
+  MaxAngle: 34.827587
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3202,8 +3391,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -92.5
+  MaxAngle: 92.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3279,8 +3468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -90
+  MaxAngle: 90
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3298,8 +3487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -91.25
+  MaxAngle: 91.25
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3317,8 +3506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -42.727272
+  MaxAngle: 42.727272
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3347,12 +3536,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4187976301681654835}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.8310003, y: -1.003, z: 1.6299998}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.1800003, y: -1, z: 1.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 9
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &564681252646293238
 MonoBehaviour:
@@ -3409,8 +3598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -40
+  MaxAngle: 40
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3428,8 +3617,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -65
+  MaxAngle: 65
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3463,8 +3652,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -84.44444
+  MaxAngle: 84.44444
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3482,8 +3671,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -70
+  MaxAngle: 70
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3501,8 +3690,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -47.5
+  MaxAngle: 47.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3520,8 +3709,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -45.909092
+  MaxAngle: 45.909092
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3539,8 +3728,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -35
+  MaxAngle: 35
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3558,8 +3747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -82.5
+  MaxAngle: 82.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3607,8 +3796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -75
+  MaxAngle: 75
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3642,8 +3831,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -97.40741
+  MaxAngle: 97.40741
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3677,8 +3866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -66.296295
+  MaxAngle: 66.296295
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3696,8 +3885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -83.10345
+  MaxAngle: 83.10345
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3715,8 +3904,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -52.5
+  MaxAngle: 52.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3734,8 +3923,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -37.5
+  MaxAngle: 37.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3753,8 +3942,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -67.5
+  MaxAngle: 67.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3772,8 +3961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -80.68965
+  MaxAngle: 80.68965
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3791,8 +3980,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -57.5
+  MaxAngle: 57.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3826,8 +4015,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -71.48148
+  MaxAngle: 71.48148
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3861,8 +4050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -40.37037
+  MaxAngle: 40.37037
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3880,8 +4069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -84.090904
+  MaxAngle: 84.090904
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3929,8 +4118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -52.5
+  MaxAngle: 52.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -3948,8 +4137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -67.5
+  MaxAngle: 67.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4025,8 +4214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -73.75
+  MaxAngle: 73.75
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4044,8 +4233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -95
+  MaxAngle: 95
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4063,8 +4252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -62.5
+  MaxAngle: 62.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4082,8 +4271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -33.18182
+  MaxAngle: 33.18182
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4101,8 +4290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -78.27586
+  MaxAngle: 78.27586
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4120,8 +4309,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -77.5
+  MaxAngle: 77.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4139,8 +4328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -45
+  MaxAngle: 45
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4174,8 +4363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -45.555557
+  MaxAngle: 45.555557
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4193,8 +4382,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -38.75
+  MaxAngle: 38.75
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4242,8 +4431,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -75.86207
+  MaxAngle: 75.86207
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4261,8 +4450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -80.909096
+  MaxAngle: 80.909096
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4296,8 +4485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -89.62963
+  MaxAngle: 89.62963
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4345,8 +4534,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -87.5
+  MaxAngle: 87.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4364,8 +4553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -52.272728
+  MaxAngle: 52.272728
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4383,8 +4572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -80
+  MaxAngle: 80
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4402,8 +4591,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -92.5
+  MaxAngle: 92.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4421,8 +4610,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -65
+  MaxAngle: 65
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4440,8 +4629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -97.5
+  MaxAngle: 97.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4459,8 +4648,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -60
+  MaxAngle: 60
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4536,8 +4725,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -45
+  MaxAngle: 45
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4555,8 +4744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -49.090908
+  MaxAngle: 49.090908
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4620,8 +4809,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4772,8 +4961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -60
+  MaxAngle: 60
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4791,8 +4980,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -42.5
+  MaxAngle: 42.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4810,8 +4999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -85
+  MaxAngle: 85
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4829,8 +5018,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -36.363636
+  MaxAngle: 36.363636
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4878,8 +5067,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -57.5
+  MaxAngle: 57.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4897,8 +5086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -92.75862
+  MaxAngle: 92.75862
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4932,8 +5121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -58.518517
+  MaxAngle: 58.518517
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4951,8 +5140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -97.8125
+  MaxAngle: 97.8125
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -4981,12 +5170,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6263109975077459938}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.8110003, y: 0.04699997, z: 1.2999997}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.16, y: 0.05, z: 1.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 11
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2533729146169000763
 MonoBehaviour:
@@ -5013,8 +5202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -60
+  MaxAngle: 60
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5032,8 +5221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5158,8 +5347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -72.5
+  MaxAngle: 72.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5177,8 +5366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -65
+  MaxAngle: 65
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5196,8 +5385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -40
+  MaxAngle: 40
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5215,8 +5404,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -45
+  MaxAngle: 45
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5264,8 +5453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -71.5625
+  MaxAngle: 71.5625
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5294,12 +5483,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6444873765773831343}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.8410006, y: -1.533, z: -0.5799999}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.1900003, y: -1.5299999, z: -0.5799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 7
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5273509282668905182
 MonoBehaviour:
@@ -5326,8 +5515,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -32.1875
+  MaxAngle: 32.1875
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5345,8 +5534,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -62.5
+  MaxAngle: 62.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5364,8 +5553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -67.5
+  MaxAngle: 67.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5383,8 +5572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -70
+  MaxAngle: 70
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5432,8 +5621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -77.5
+  MaxAngle: 77.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5468,6 +5657,40 @@ Transform:
   m_Father: {fileID: 7957831836099917226}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6566031890790002665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2054600374513274313}
+  m_Layer: 0
+  m_Name: Colliders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2054600374513274313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6566031890790002665}
+  m_LocalRotation: {x: -0.16371132, y: -0.98268723, z: -0.08081056, w: -0.03152838}
+  m_LocalPosition: {x: 0.54, y: 0.20000002, z: -0.12000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6170930247029077179}
+  - {fileID: 291249780540128940}
+  - {fileID: 6111247749861326930}
+  - {fileID: 1414124609982093653}
+  m_Father: {fileID: 6783693166118317232}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &21874424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5481,8 +5704,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -70
+  MaxAngle: 70
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5500,8 +5723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -32.5
+  MaxAngle: 32.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5519,8 +5742,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -47.5
+  MaxAngle: 47.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5538,8 +5761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -95
+  MaxAngle: 95
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5557,8 +5780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5705,8 +5928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -48.148148
+  MaxAngle: 48.148148
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5724,8 +5947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -69.375
+  MaxAngle: 69.375
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5743,8 +5966,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -61.818184
+  MaxAngle: 61.818184
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5762,8 +5985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -58.96552
+  MaxAngle: 58.96552
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5781,8 +6004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -85
+  MaxAngle: 85
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5800,8 +6023,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -95.625
+  MaxAngle: 95.625
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5849,8 +6072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -50
+  MaxAngle: 50
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5868,8 +6091,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -65
+  MaxAngle: 65
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5887,8 +6110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -37.24138
+  MaxAngle: 37.24138
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5964,8 +6187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -60.625
+  MaxAngle: 60.625
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -5983,8 +6206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -87.5
+  MaxAngle: 87.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6013,12 +6236,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7056568492700012005}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.8110006, y: -0.0130000245, z: -1.4300001}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.1599998, y: -0.010000005, z: -1.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 5
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4280738098732787763
 MonoBehaviour:
@@ -6045,8 +6268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -90.454544
+  MaxAngle: 90.454544
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6064,8 +6287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -80
+  MaxAngle: 80
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6083,8 +6306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -75
+  MaxAngle: 75
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6102,8 +6325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -55
+  MaxAngle: 55
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6121,8 +6344,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -85
+  MaxAngle: 85
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6140,8 +6363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -97.5
+  MaxAngle: 97.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6159,8 +6382,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -71.034485
+  MaxAngle: 71.034485
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6178,8 +6401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -36.5625
+  MaxAngle: 36.5625
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6197,8 +6420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -77.5
+  MaxAngle: 77.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6216,8 +6439,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -47.5
+  MaxAngle: 47.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6235,8 +6458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -51.724136
+  MaxAngle: 51.724136
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6254,8 +6477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -55
+  MaxAngle: 55
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6273,8 +6496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -56.551723
+  MaxAngle: 56.551723
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6308,8 +6531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -37.77778
+  MaxAngle: 37.77778
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6327,8 +6550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -62.5
+  MaxAngle: 62.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6346,8 +6569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6521,18 +6744,10 @@ Transform:
   m_LocalPosition: {x: -0.86, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
-  - {fileID: 6170930247029077179}
+  - {fileID: 2054600374513274313}
   - {fileID: 3232363179886689704}
   - {fileID: 4698755457339106612}
-  - {fileID: 2259503532917153234}
-  - {fileID: 7586743041468516807}
-  - {fileID: 1139343902696201511}
-  - {fileID: 6917385178978198935}
-  - {fileID: 8992864000753852435}
-  - {fileID: 1127008524652290320}
-  - {fileID: 2008258191212012914}
-  - {fileID: 4553551099041932855}
-  - {fileID: 2206436591059505252}
+  - {fileID: 8641906656850562129}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.132, y: 0.030000001, z: 1.128}
@@ -6566,9 +6781,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 8896624410441374332}
   _playerRotation: {fileID: 2248579337373782978}
-  _deccelerationModifier: 0.975
-  _speed: 3
-  _maxSpeed: 3.8
+  _deccelerationModifier: 0.9
+  _speed: 4
+  _maxSpeed: 4.8
 --- !u!114 &2248579337373782978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6581,7 +6796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab14d11d213dca43810db9f966d2548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 1
+  _rotationSpeed: 1.6
 --- !u!114 &8069556942772659749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6651,8 +6866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -42.5
+  MaxAngle: 42.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6670,8 +6885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -80
+  MaxAngle: 80
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6747,8 +6962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -72.5
+  MaxAngle: 72.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6766,8 +6981,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -54.13793
+  MaxAngle: 54.13793
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6785,8 +7000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -82.5
+  MaxAngle: 82.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6804,8 +7019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -86.875
+  MaxAngle: 86.875
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6823,8 +7038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -72.5
+  MaxAngle: 72.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6842,8 +7057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -62.5
+  MaxAngle: 62.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6861,8 +7076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -61.37931
+  MaxAngle: 61.37931
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6880,8 +7095,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -95.17242
+  MaxAngle: 95.17242
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6899,8 +7114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -90.344826
+  MaxAngle: 90.344826
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6918,8 +7133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -55
+  MaxAngle: 55
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6937,8 +7152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -97.5
+  MaxAngle: 97.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -6967,12 +7182,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7952333350463962048}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000000013191933, w: 1}
-  m_LocalPosition: {x: -2.821, y: -0.4130001, z: 1.63}
+  m_LocalRotation: {x: -0, y: -0, z: -9.3132235e-10, w: 1}
+  m_LocalPosition: {x: -3.17, y: -0.41000003, z: 1.6300001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 10
+  m_Father: {fileID: 3515877490198911754}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4666686447852076602
 MonoBehaviour:
@@ -6999,8 +7214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -75
+  MaxAngle: 75
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7018,8 +7233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -34.375
+  MaxAngle: 34.375
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7037,8 +7252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -82.5
+  MaxAngle: 82.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7056,8 +7271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -39.655174
+  MaxAngle: 39.655174
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7075,8 +7290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -35
+  MaxAngle: 35
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7094,8 +7309,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -82.5
+  MaxAngle: 82.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7113,8 +7328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -42.5
+  MaxAngle: 42.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7132,8 +7347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -32.41379
+  MaxAngle: 32.41379
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7151,8 +7366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -100
+  MaxAngle: 100
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7186,8 +7401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -74.07407
+  MaxAngle: 74.07407
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7205,8 +7420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -37.5
+  MaxAngle: 37.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7224,8 +7439,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -62.8125
+  MaxAngle: 62.8125
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7259,8 +7474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -92.22222
+  MaxAngle: 92.22222
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7294,8 +7509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -53.333336
+  MaxAngle: 53.333336
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7313,8 +7528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -52.5
+  MaxAngle: 52.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7332,8 +7547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -43.125
+  MaxAngle: 43.125
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7351,8 +7566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -75
+  MaxAngle: 75
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7370,8 +7585,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -39.545456
+  MaxAngle: 39.545456
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7389,8 +7604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -77.5
+  MaxAngle: 77.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7408,8 +7623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -84.6875
+  MaxAngle: 84.6875
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7427,8 +7642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -96.818184
+  MaxAngle: 96.818184
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7446,8 +7661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -50
+  MaxAngle: 50
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7465,8 +7680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -97.5
+  MaxAngle: 97.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7484,8 +7699,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 1, y: 0, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -47.5
+  MaxAngle: 47.5
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7503,8 +7718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -58.636364
+  MaxAngle: 58.636364
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7522,8 +7737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -360
-  MaxAngle: 360
+  MinAngle: -30
+  MaxAngle: 30
   StartOffset: {x: 0, y: 0, z: 0}
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
@@ -7656,8 +7871,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9061401090227746737}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -3.8787099e-10, w: 1}
+  m_LocalPosition: {x: -0.35000002, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7460051645642256644}
@@ -7668,8 +7883,8 @@ Transform:
   - {fileID: 3825005668316105494}
   - {fileID: 7957831836099917226}
   - {fileID: 6722885200559175516}
-  m_Father: {fileID: 6783693166118317232}
-  m_RootOrder: 3
+  m_Father: {fileID: 8641906656850562129}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9121628222569003500
 GameObject:
@@ -7716,7 +7931,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b670b9a37355e06469d7fc2a81823b02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b670b9a37355e06469d7fc2a81823b02,
         type: 3}
@@ -7726,7 +7941,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b670b9a37355e06469d7fc2a81823b02,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b670b9a37355e06469d7fc2a81823b02,
         type: 3}
@@ -8885,9 +9100,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b670b9a37355e06469d7fc2a81823b02, type: 3}
---- !u!1 &8984164494895060266 stripped
+--- !u!1 &8815256297587771384 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -512904594899330300, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 9086563218385996246, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4054497504723354964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4896655240020374662, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2210019823863779189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7285574408523923109, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1768335024181882174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7150165162957757680, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7073756756747171444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7378279056255924314, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8186129752008425515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -732652580139594235, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8768668415844503775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -144272932575584527, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7660961317026853736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7935010789211864390, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3389514432978338785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3118206816371232207, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1414866046580437136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1724171479367139006, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4162196680933326788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4788181638235377174, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5098816379590992312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4795563414729486230, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3479936453237886904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3748356339988218262, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5460574651432926871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5730894614535139513, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6874976969128916578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6568274518447634508, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &553257471572138899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8943461380802292291, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -8897,9 +9202,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3282424691912234977 stripped
+--- !u!1 &4531669983862172073 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009075402491550159, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 4227851079751968647, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -8915,9 +9220,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5988651369468715653 stripped
+--- !u!1 &1951193180428496591 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6292680211581332651, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -6963719360411901727, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -8933,33 +9238,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4428999567069882901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4123351522274092091, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4181727249159836883 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4487726218535754493, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8668141947885521385 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -286949642626103353, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3664316909677476602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3933231473568642260, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6146188301204184144 stripped
+--- !u!1 &3080381551808960775 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -3385505921578413442, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 3382299305837909801, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -8969,9 +9256,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5273847858442442409 stripped
+--- !u!1 &3545878517674329438 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5584350633606191239, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -5369807778706404496, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -8981,21 +9268,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7387344299770142041 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -2104588954010922121, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3555303711275939104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3826115869038312206, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &347238701807346549 stripped
+--- !u!1 &1220147080731917071 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 44545877989600603, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -7736844749352930015, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9005,21 +9286,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7103848092535432886 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7411255708107188376, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5965868341198000686 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2989013173888967680, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1538239350058735825 stripped
+--- !u!1 &6817771818403642117 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1231467827718706943, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -2678948365426248405, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9029,21 +9304,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4629340907460797507 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4291551146962900371, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6943812292235116514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2012403686372560436, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2107728248513401761 stripped
+--- !u!1 &8984164494895060266 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -7417491998266155633, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -512904594899330300, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9053,21 +9322,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8562474892457952139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8258445526359461285, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7254941997640876759 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6980960617881079033, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5537369921478468533 stripped
+--- !u!1 &3282424691912234977 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -3992633046261977701, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 3009075402491550159, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9077,9 +9340,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &841083676451916780 stripped
+--- !u!1 &5704807801732233640 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -8078401260783254078, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 5432587478825039750, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9089,9 +9352,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4352238033092997818 stripped
+--- !u!1 &5988651369468715653 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -5176429749558674284, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 6292680211581332651, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9101,9 +9364,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3498266952475634068 stripped
+--- !u!1 &4428999567069882901 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3802083434226378682, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 4123351522274092091, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9113,9 +9376,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3839116894794539171 stripped
+--- !u!1 &4181727249159836883 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3533260303579246221, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 4487726218535754493, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9125,21 +9388,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2623601991018208031 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6906540631877987023, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6534599018791742451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2386785960457460259, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8277965951854372774 stripped
+--- !u!1 &8668141947885521385 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -671353194018281080, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -286949642626103353, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9149,21 +9406,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5024455114498001336 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4470505764826003562, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8621677514887972865 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -870958369791850961, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1797896141367930817 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7152691488734944785, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9173,9 +9418,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4646216277235311914 stripped
+--- !u!1 &6146188301204184144 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -4308452903245960444, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -3385505921578413442, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9185,9 +9430,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3515911819022272877 stripped
+--- !u!1 &5273847858442442409 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3784403388776712003, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 5584350633606191239, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9197,21 +9442,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2520333635834493665 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6433981501899295537, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7295548728820277718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2201944566303870984, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6222323772775259396 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5914848631705654058, guid: b670b9a37355e06469d7fc2a81823b02,
+--- !u!4 &7387344299770142041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2104588954010922121, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9221,9 +9460,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1419756736697556960 stripped
+--- !u!1 &347238701807346549 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1728287993043276238, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 44545877989600603, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9233,9 +9472,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8571693802881743923 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -956126625670925795, guid: b670b9a37355e06469d7fc2a81823b02,
+--- !u!4 &7103848092535432886 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7411255708107188376, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9245,9 +9484,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &954841422212532518 stripped
+--- !u!1 &1538239350058735825 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 652923857161094920, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 1231467827718706943, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9257,21 +9496,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6778672868736259610 stripped
+--- !u!1 &4629340907460797507 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6511447429569828916, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -4291551146962900371, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7896621312257796747 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7627284407037863077, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5346454603671853438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3567539346743142576, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9287,9 +9520,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3229271473202739012 stripped
+--- !u!1 &2107728248513401761 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -6296229415324698262, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -7417491998266155633, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9305,6 +9538,342 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8562474892457952139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8258445526359461285, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8200795906097177125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8467037308126751755, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4079681424543657218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4840787558439410900, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5537369921478468533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3992633046261977701, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7031456121731649800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1883874731741536474, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &841083676451916780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8078401260783254078, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8080603412984948919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8389062625534633625, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1846825219043490365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2156903436709819411, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4352238033092997818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5176429749558674284, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1625565667015516671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1351302692009308113, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3498266952475634068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3802083434226378682, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3839116894794539171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3533260303579246221, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2623601991018208031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6906540631877987023, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3829069018397843061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3561348962226475099, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7387668099781444241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7118402113059474623, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7574393999032215977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7877436527688804231, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7432906754609709856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2060083808452702962, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8277965951854372774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -671353194018281080, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6850614296787334979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2639772837492999827, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5024455114498001336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4470505764826003562, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7748634039724467660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1168881577694893086, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6464419328579243954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2451687874578677348, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &918542881317992687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8579163650343455039, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1797896141367930817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7152691488734944785, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &962368223635384761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 654399857113474967, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4646216277235311914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4308452903245960444, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2011762658736635541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2280183181143306427, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3515911819022272877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3784403388776712003, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7318125482641723527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7043864723835690665, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2520333635834493665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6433981501899295537, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3536815652420725570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3844573144621622636, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6222323772775259396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5914848631705654058, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5436436587997459427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3513375353848463923, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1419756736697556960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1728287993043276238, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5308051414829861758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5613206268530918736, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6263634120420772212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3268760156262119590, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4993814732722946585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4684440657784851511, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8057603665316323283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7754558817394299389, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4735387635010931024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4181425093850495106, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8571693802881743923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -956126625670925795, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3414548372276714561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3111152092929626735, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &954841422212532518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 652923857161094920, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1327797510337462094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7628348778110095008, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6778672868736259610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6511447429569828916, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7871466463854674141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1624971583560036621, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7320745525523453551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7050212300114008129, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6198745453498383308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3293890706058299934, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5346454603671853438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3567539346743142576, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7861046334032137810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1632579042393276292, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6171544727809877632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3320741976026683218, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3603534216694353732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3912980155046412650, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3229271473202739012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6296229415324698262, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1604745370544633755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1300082986401298869, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4109453551469980278 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4807496100931148712, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5823042453430279379 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3134369287024504067, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &880689797600208448 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 610017071672911982, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5095285351111958652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4397212012262838702, guid: b670b9a37355e06469d7fc2a81823b02,
@@ -9317,15 +9886,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3867128921398791244 stripped
+--- !u!1 &5403527424768697132 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3595329067184079458, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 5670821858288790786, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8200795906097177125 stripped
+--- !u!1 &7406410894232780443 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8467037308126751755, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 7099707696247107765, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3867128921398791244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3595329067184079458, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9335,21 +9910,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4079681424543657218 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4840787558439410900, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6612454044013425335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2338557791419335527, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7031456121731649800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1883874731741536474, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9359,33 +9922,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8080603412984948919 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8389062625534633625, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4254031786179483584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4559536877283793390, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1846825219043490365 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2156903436709819411, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3973830999319703212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3704777776689799298, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1625565667015516671 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1351302692009308113, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9407,9 +9952,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3829069018397843061 stripped
+--- !u!1 &3758742481553719566 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3561348962226475099, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 3487577904556511008, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &616122340601908646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919589736001815432, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9419,21 +9970,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7387668099781444241 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7118402113059474623, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5619471512156838101 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3912574270874544389, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7574393999032215977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7877436527688804231, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9443,21 +9982,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7432906754609709856 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2060083808452702962, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3544677765286576385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5368615821975728337, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6850614296787334979 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2639772837492999827, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9467,21 +9994,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7748634039724467660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1168881577694893086, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7331119312435526993 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2165457556930022529, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &918542881317992687 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8579163650343455039, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9491,9 +10006,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &962368223635384761 stripped
+--- !u!1 &8607554796413826684 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 654399857113474967, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 8303455207582152786, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9503,21 +10018,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2011762658736635541 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2280183181143306427, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &298607323666920136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 30184035313958118, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7318125482641723527 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7043864723835690665, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9527,9 +10030,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3536815652420725570 stripped
+--- !u!1 &3586331018115875186 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3844573144621622636, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -5365241877501407396, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1344757402151352185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7573251079946143401, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3763476164663495948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3491816240498033442, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9539,21 +10054,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5436436587997459427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3513375353848463923, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5260774911824934258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3653009633164575908, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5308051414829861758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5613206268530918736, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9563,21 +10066,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4993814732722946585 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4684440657784851511, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5007890600023272948 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4525985646516493350, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4735387635010931024 stripped
+--- !u!1 &6626951916254469495 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -4181425093850495106, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -2326029668512656551, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9587,9 +10084,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3414548372276714561 stripped
+--- !u!1 &2591480111422537935 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3111152092929626735, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -6361008393914872095, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9599,9 +10096,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1327797510337462094 stripped
+--- !u!1 &5328964153279392742 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -7628348778110095008, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -3622115284938414648, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9611,21 +10108,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7871466463854674141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1624971583560036621, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7375319629011630566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7067704583695218632, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6198745453498383308 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3293890706058299934, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9635,21 +10120,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7861046334032137810 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1632579042393276292, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3805464163648644304 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3494890624588983038, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3603534216694353732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3912980155046412650, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9659,27 +10132,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1604745370544633755 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1300082986401298869, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4109453551469980278 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4807496100931148712, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4870452844575466199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5177084522781453561, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!137 &880689797600208448 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 610017071672911982, guid: b670b9a37355e06469d7fc2a81823b02,
+--- !u!1 &1414333493683693818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7498676797554448684, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9719,12 +10180,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5823042453430279379 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3134369287024504067, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &163959491174257122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8788385759829205044, guid: b670b9a37355e06469d7fc2a81823b02,
@@ -9755,6 +10210,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6117996988475419259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3411305023424617387, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8058350199934915087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1469612529487963103, guid: b670b9a37355e06469d7fc2a81823b02,
@@ -9767,9 +10228,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2284575682624196479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7207007874919825071, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8762493889916399253 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -156147988211244869, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4312184274662353575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4582435982149674121, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9800,6 +10273,12 @@ GameObject:
 --- !u!1 &5806851061504906718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3109183891729015824, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2426851125573838204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2729755055621958482, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9839,6 +10318,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2836984565788538545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6696536461183879009, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8979246186278115091 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -516980291062277827, guid: b670b9a37355e06469d7fc2a81823b02,
@@ -9848,6 +10333,12 @@ GameObject:
 --- !u!1 &6354853357300819845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6665072956682840491, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2646897237302543117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6848766685204706013, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9881,12 +10372,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5704807801732233640 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5432587478825039750, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8856522780655487972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9126352730940081610, guid: b670b9a37355e06469d7fc2a81823b02,
@@ -9905,9 +10390,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3076331803165683917 stripped
+--- !u!1 &4458928826670435813 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3386340261953339107, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 4156450665319187403, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7032610332820885059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7338395868099133549, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3060346212920559432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5893125771208291994, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8496214558539945159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8189655044392426217, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6959098304543544756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7267770719284419482, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7043431313114780273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7345558498344197215, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4010136578310876914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5482785067703164708, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7468225979413440361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7200013402162440519, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6789885239626506612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2705144565334888614, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9917,33 +10450,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1757356903248315623 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2030141799603620553, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4531669983862172073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4227851079751968647, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3782966755292003639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3472325647822697241, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7562061306359403821 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1387610825694455037, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6658238769593543286 stripped
+--- !u!1 &3076331803165683917 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6352662751413986392, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 3386340261953339107, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9953,15 +10468,51 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8912929286247832312 stripped
+--- !u!1 &1757356903248315623 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 9223077408780047574, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 2030141799603620553, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7219172637819822003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2278743634259881571, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3782966755292003639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3472325647822697241, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &981224338210650809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8515775104373033833, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6658238769593543286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6352662751413986392, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4373301970832387925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5116380513950277253, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8912929286247832312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9223077408780047574, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8918318556607905114 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9190679737278329716, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9977,9 +10528,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &981224338210650809 stripped
+--- !u!1 &6440818942181094401 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -8515775104373033833, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: -2509205050774635985, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -9995,9 +10546,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4373301970832387925 stripped
+--- !u!1 &597883439330015243 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -5116380513950277253, guid: b670b9a37355e06469d7fc2a81823b02,
+  m_CorrespondingSourceObject: {fileID: 865810624614184485, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5134197518938307521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4832279455688553967, guid: b670b9a37355e06469d7fc2a81823b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 310715384656924206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1458926681571729812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8038705529958846534, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
@@ -10013,357 +10576,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6464419328579243954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2451687874578677348, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7454635774305756550 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7150535618556095400, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8057603665316323283 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7754558817394299389, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6263634120420772212 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3268760156262119590, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7320745525523453551 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7050212300114008129, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6171544727809877632 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3320741976026683218, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5403527424768697132 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5670821858288790786, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7406410894232780443 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7099707696247107765, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3758742481553719566 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3487577904556511008, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &616122340601908646 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919589736001815432, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8607554796413826684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8303455207582152786, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1344757402151352185 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7573251079946143401, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3586331018115875186 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5365241877501407396, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6626951916254469495 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2326029668512656551, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3763476164663495948 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3491816240498033442, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5328964153279392742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3622115284938414648, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2591480111422537935 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6361008393914872095, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6117996988475419259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3411305023424617387, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1414333493683693818 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7498676797554448684, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4312184274662353575 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4582435982149674121, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2284575682624196479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7207007874919825071, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2836984565788538545 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6696536461183879009, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2426851125573838204 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2729755055621958482, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4458928826670435813 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4156450665319187403, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2646897237302543117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6848766685204706013, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3060346212920559432 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5893125771208291994, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7032610332820885059 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7338395868099133549, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7043431313114780273 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7345558498344197215, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8496214558539945159 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8189655044392426217, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7468225979413440361 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7200013402162440519, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6959098304543544756 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7267770719284419482, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8918318556607905114 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9190679737278329716, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4010136578310876914 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5482785067703164708, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &597883439330015243 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 865810624614184485, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6789885239626506612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2705144565334888614, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8815256297587771384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9086563218385996246, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6440818942181094401 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2509205050774635985, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2210019823863779189 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7285574408523923109, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5134197518938307521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4832279455688553967, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7073756756747171444 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7378279056255924314, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1458926681571729812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8038705529958846534, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1414866046580437136 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1724171479367139006, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4054497504723354964 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4896655240020374662, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5098816379590992312 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4795563414729486230, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1768335024181882174 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7150165162957757680, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5460574651432926871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5730894614535139513, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8186129752008425515 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -732652580139594235, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &553257471572138899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8943461380802292291, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8768668415844503775 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -144272932575584527, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1951193180428496591 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6963719360411901727, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7660961317026853736 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7935010789211864390, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3080381551808960775 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3382299305837909801, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3389514432978338785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3118206816371232207, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3545878517674329438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5369807778706404496, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4162196680933326788 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4788181638235377174, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1220147080731917071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7736844749352930015, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3479936453237886904 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3748356339988218262, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6817771818403642117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2678948365426248405, guid: b670b9a37355e06469d7fc2a81823b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 310715384656924206}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6874976969128916578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6568274518447634508, guid: b670b9a37355e06469d7fc2a81823b02,
     type: 3}
   m_PrefabInstance: {fileID: 310715384656924206}
   m_PrefabAsset: {fileID: 0}

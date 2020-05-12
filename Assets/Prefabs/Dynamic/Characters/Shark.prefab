@@ -111,12 +111,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 148340035746990941}
   _offset: {x: 0, y: 0}
-  _moveTime: 2
+  _moveTime: 3
   _onlyFollowInX: 0
   _rotate: 1
   _onlyRotateInX: 0
   _rotation: {fileID: 3999115061913708491}
   _lerp: 0
+  _followInZ: 0
+  _zOffset: 0
   _alwaysDetectPlayer: 0
   _resetPlayerDetectedWhenOutOfRaycast: 0
   _detectionDistance: 8
