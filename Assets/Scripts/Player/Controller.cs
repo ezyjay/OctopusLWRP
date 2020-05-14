@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Controller : MonoBehaviour 
 {
@@ -13,6 +15,10 @@ public class Controller : MonoBehaviour
     private Vector2 _inputDirection;
     private Vector2 _previousInputDirection = Vector2.zero;
     private float _inputDirectionToStartMoving = 0.4f;
+
+	private bool _startedMovingInvoked, _stoppedMovingInvoked;
+
+	public Action<bool> PlayerMoving;
 
     public Vector2 InputDirection { get => _inputDirection; set => _inputDirection = value; }
 
@@ -39,8 +45,18 @@ public class Controller : MonoBehaviour
                 _rb.velocity = _inputDirection.normalized * _speed;
 
             _previousInputDirection = _inputDirection;
+
+			if (startMoving) {
+				_stoppedMovingInvoked = false;
+				if(!_startedMovingInvoked)  {
+					PlayerMoving.Invoke(true);
+					_startedMovingInvoked = true;
+				}
+			}
         } 
         else {
+			
+			_startedMovingInvoked = false;
 
             _playerRotation.RotateBack(_previousInputDirection.normalized);
 
@@ -51,6 +67,10 @@ public class Controller : MonoBehaviour
                     _rb.velocity = 0.1f * _rb.velocity;
             }
                 
+			if (!_stoppedMovingInvoked)  {
+				PlayerMoving.Invoke(false);
+				_stoppedMovingInvoked = true;
+			}
         }
     }
 }
