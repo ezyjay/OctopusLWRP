@@ -15,8 +15,21 @@ public class FollowTarget : MonoBehaviour
 	public bool _lerp = true;
 	public bool _followInZ = false;
 	public float _zOffset;
+	public bool _setPositionStart = false;
 
     protected Vector2 _direction;
+
+	private void Start() 
+	{
+		if (_setPositionStart) {
+			if (_onlyFollowInX)
+				transform.position = new Vector3(_target.CurrentTarget.x, transform.position.y, transform.position.z);
+			else if (_followInZ)
+				transform.position = new Vector3(_target.CurrentTarget.x, _target.CurrentTarget.y, _target.CurrentTarget.z);
+			else
+				transform.position = new Vector3(_target.CurrentTarget.x, _target.CurrentTarget.y, transform.position.z);
+		}
+	}
 
     protected virtual void FixedUpdate()
     {

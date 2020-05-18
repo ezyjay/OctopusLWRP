@@ -7520,6 +7520,9 @@ MonoBehaviour:
   _bubbleBurst: {fileID: 2635376166948162650}
   _bubbleIdle: {fileID: 2584883663196486970}
   _bubblesMoving: {fileID: 467988334644632403}
+  _bobPlayerOnIdle: 1
+  _bobDistance: 0.6
+  _smoothTime: 3
   PlayerStartedMoving:
     m_PersistentCalls:
       m_Calls: []
@@ -21602,7 +21605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 8896624410441374332}
   _playerRotation: {fileID: 2248579337373782978}
-  _deccelerationModifier: 0.9
+  _deccelerationModifier: 0.85
   _speed: 4
   _maxSpeed: 4.8
 --- !u!114 &2248579337373782978

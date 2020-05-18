@@ -7,16 +7,14 @@ using UnityEditor;
 #endif
 using System.Reflection;
  
-/// <summary>
-/// Stick this on a method
-/// </summary>
 [System.AttributeUsage(System.AttributeTargets.Method)]
 public class EditorButtonAttribute : PropertyAttribute
 {
 }
  
 #if UNITY_EDITOR
-[CustomEditor(typeof (MonoBehaviour), true)]
+[CanEditMultipleObjects]
+[@CustomEditor(typeof (MonoBehaviour), true)]
 public class EditorButton : Editor
 {
     public override void OnInspectorGUI()

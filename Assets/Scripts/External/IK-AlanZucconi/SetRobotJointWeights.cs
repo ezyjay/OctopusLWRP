@@ -13,7 +13,7 @@ namespace AlanZucconi.IK
 
         public Vector3[] Axes;
 
-        [ExposeInEditor(RuntimeOnly = false)]
+		[EditorButton]
         public void ChangeAngles()
         {
             for (int i = 0; i < IK.Joints.Length; i++)

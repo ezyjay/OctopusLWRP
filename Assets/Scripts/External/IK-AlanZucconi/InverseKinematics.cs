@@ -120,7 +120,7 @@ namespace AlanZucconi.IK
                 ErrorFunction = DistanceFromTarget;
         }
 
-        [ExposeInEditor(RuntimeOnly = false)]
+		[EditorButton]
         public void GetJoints()
         {
             Joints = BaseJoint.GetComponentsInChildren<RobotJoint>();
