@@ -5,6 +5,7 @@ using UnityEngine;
 public class SavePoint : MonoBehaviour
 {
 	public Transform _spawnPoint;
+	public ParticleSystem _saved;
 
 	private SphereCollider _collider;
 
@@ -14,6 +15,7 @@ public class SavePoint : MonoBehaviour
 		&& SaveSystem.Instance.SaveData.playerPosition != _spawnPoint.position && _spawnPoint.position.x > SaveSystem.Instance.SaveData.playerPosition.x) {
 			SaveSystem.Instance.SavePlayerPosition(_spawnPoint.position);
 			SaveSystem.Instance.SaveGame();
+			_saved.Play();
 		}
 
 	}

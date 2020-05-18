@@ -91,9 +91,17 @@ public class SharkAttack : DetectPlayerFollowTarget
    private void OnCollisionEnter(Collision other) {
 	   
 	   if (other.collider.CompareTag("Player") && _doPlayerDetection && !GameUtil.Player._isInvinsible) {
-			GameUtil.Player.gameObject.SetActive(false);
-			GameUtil.ActivateGameOver();
+		   StartCoroutine(KillPlayer());
 	   }
+   }
+
+   private IEnumerator KillPlayer() {
+	   GameUtil.Player._playerFX._deathFX.transform.position = GameUtil.Player.transform.position;
+		GameUtil.Player._playerFX._deathFX.Play();
+		GameUtil.Player.gameObject.SetActive(false);
+		yield return new WaitForSeconds(1.5f);
+		GameUtil.ActivateGameOver();
+		
    }
 
    void OnDrawGizmos()

@@ -5,10 +5,11 @@ using UnityEngine.Events;
 
 public class PlayerFX : MonoBehaviour
 {
-	[Header("Bubbles")]
+	[Header("Particle systems")]
 	public ParticleSystem _bubbleBurst; 
 	public ParticleSystem _bubbleIdle;
 	public ParticleSystem _bubblesMoving;
+	public ParticleSystem _deathFX;
 	
 	[Header("Player Idle")]
 	public bool _bobPlayerOnIdle = true;
