@@ -83,7 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _point1: {fileID: 0}
   _point2: {fileID: 0}
-  _distanceToChangePoint: 3
+  _distanceToChangePoint: 2
 --- !u!114 &3999115061913708491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,16 +119,17 @@ MonoBehaviour:
   _lerp: 0
   _followInZ: 0
   _zOffset: 0
+  _setPositionStart: 0
   _alwaysDetectPlayer: 0
   _resetPlayerDetectedWhenOutOfRaycast: 0
-  _detectionDistance: 8
-  _timePlayerInRayBeforeAction: 1.2
-  _speedWhenDetected: 16
+  _detectionDistance: 9
+  _timePlayerInRayBeforeAction: 0.8
+  _speedWhenDetected: 19
   _raycastOrigin: {fileID: 204474491392980695}
   _sphereCastRadius: 0.6
   _exclamation: {fileID: 1560623783555878055}
   _useFieldOfView: 1
-  _fieldOfView: 60
+  _fieldOfView: 90
 --- !u!23 &7233161489288831416
 MeshRenderer:
   m_ObjectHideFlags: 0

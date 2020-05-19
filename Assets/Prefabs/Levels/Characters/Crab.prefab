@@ -353,11 +353,14 @@ MonoBehaviour:
   _onlyRotateInX: 0
   _rotation: {fileID: 0}
   _lerp: 1
+  _followInZ: 0
+  _zOffset: 0
+  _setPositionStart: 0
   _alwaysDetectPlayer: 1
   _resetPlayerDetectedWhenOutOfRaycast: 1
   _detectionDistance: 2
   _timePlayerInRayBeforeAction: 5
-  _speedWhenDetected: 2.5
+  _speedWhenDetected: 3
   _raycastOrigin: {fileID: 581250997008793889}
   _sphereCastRadius: 0.2
   _exclamation: {fileID: 1386800577019328557}
