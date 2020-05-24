@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class SharkAttack : DetectPlayerFollowTarget
 {
+	[Header("Shark")]
+	public Animator _sharkAnimator;
+
    private PlayerHiddenState _playerHiddenState;
    private MeshRenderer _renderer;
 
    private Vector2 _targetPos = Vector2.zero;
    private Vector2 _savedTarget, _point1Position;
    private WanderBetweenPoints _wanderPoints;
+   private ParticleSystem _deathFX;
 
    protected override void Awake() {
 	   base.Awake();
+	   _deathFX = transform.parent.GetComponentInChildren<ParticleSystem>();
 	   _playerHiddenState = GameUtil.Player._hiddenState;
 	   _renderer = GetComponent<MeshRenderer>();
 	   _wanderPoints = _target as WanderBetweenPoints;
@@ -46,6 +51,9 @@ public class SharkAttack : DetectPlayerFollowTarget
 
 		//Move towards player
 		else {
+			if (!_sharkAnimator.GetBool("Attack"))
+				_sharkAnimator.SetBool("Attack", true);
+
 			transform.position = Vector3.MoveTowards(transform.position, _targetPos, _speedWhenDetected * Time.deltaTime);
 			
 			//Go back to normal behaviour after attack
@@ -59,21 +67,24 @@ public class SharkAttack : DetectPlayerFollowTarget
 						_point1Position = hitInfo.point;
 
 					//Set next wander points
-					_wanderPoints._point1.position = _point1Position;
-					_wanderPoints._point2.position = _targetPos;
+					// _wanderPoints._point1.position = _point1Position;
+					// _wanderPoints._point2.position = _targetPos;
 				}
 				_playerDetected = false;
 				_targetPos = Vector2.zero;
+				_sharkAnimator.SetBool("Attack", false);
 			}
 		}
    }
 
    public void FadeShark() {
-	   StartCoroutine(FadeAndDisable(0f, 2f));
+	   _deathFX.transform.position = gameObject.transform.position;
+	   _deathFX.Play();
+	   StartCoroutine(FadeAndDisable(gameObject, _renderer.material, 0f, 0.2f, true));
    }
 
-	private IEnumerator FadeAndDisable(float aValue, float aTime) {
-		Color oldColor = _renderer.material.GetColor("_BaseColor");
+	private IEnumerator FadeAndDisable(GameObject go, Material material, float aValue, float aTime, bool destroy = false) {
+		Color oldColor = material.GetColor("_BaseColor");
 		Color newColor;
         float alpha = aValue;
 		float timer = 0;
@@ -82,10 +93,12 @@ public class SharkAttack : DetectPlayerFollowTarget
             alpha = Mathf.Lerp(oldColor.a, aValue, timer);
 			newColor = new Color(oldColor.r, oldColor.g, oldColor.b, alpha);
 			timer += Time.deltaTime/aTime;
-            _renderer.material.SetColor("_BaseColor", newColor);
+            material.SetColor("_BaseColor", newColor);
 			yield return null;
 		}
-		Destroy(gameObject);
+		go.SetActive(false);
+		if (destroy)
+			Destroy(go);
 	}
 
    private void OnCollisionEnter(Collision other) {
@@ -96,7 +109,7 @@ public class SharkAttack : DetectPlayerFollowTarget
    }
 
    private IEnumerator KillPlayer() {
-	   GameUtil.Player._playerFX._deathFX.transform.position = GameUtil.Player.transform.position;
+	    GameUtil.Player._playerFX._deathFX.transform.position = GameUtil.Player.transform.position;
 		GameUtil.Player._playerFX._deathFX.Play();
 		GameUtil.Player.gameObject.SetActive(false);
 		yield return new WaitForSeconds(1.5f);

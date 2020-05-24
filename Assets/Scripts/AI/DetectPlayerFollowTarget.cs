@@ -76,19 +76,23 @@ public class DetectPlayerFollowTarget : FollowTarget
 				if (_timePlayerDetected == 0f && PlayerDetectable()) {
 					OnPlayerJustDetected();
 					_timePlayerDetected = Time.time;
-					_exclamation.color = new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 0);
-					_exclamation.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+					_exclamation.color = new Color(1, 1, 0, 0); //yellow, transparent
+					_exclamation.transform.localScale = Vector3.one * 0.05f;
 					_exclamation.gameObject.SetActive(true);
+					_exclamation.transform.localScale = Vector3.Lerp(_exclamation.transform.localScale, Vector3.one * 0.1f, _timePlayerInRayBeforeAction * Time.deltaTime);
+					_exclamation.color = Color.Lerp(_exclamation.color, new Color(Color.red.r, Color.red.g, Color.red.b, 1), _timePlayerInRayBeforeAction * Time.deltaTime);	
 				
 				//Timer has started, lerp indicators
 				} else {
-					_exclamation.transform.localScale = Vector3.Lerp(_exclamation.transform.localScale, Vector3.one * 0.1f, _timePlayerInRayBeforeAction * Time.deltaTime);
-					_exclamation.color = Color.Lerp(_exclamation.color, new Color(_exclamation.color.r, _exclamation.color.g, _exclamation.color.r, 1), _timePlayerInRayBeforeAction * Time.deltaTime);
-					
+					_exclamation.transform.localScale = Vector3.Lerp(_exclamation.transform.localScale, Vector3.one * 0.1f, _timePlayerInRayBeforeAction * Time.deltaTime * 2f);
+					_exclamation.color = Color.Lerp(_exclamation.color, new Color(Color.red.r, Color.red.g, Color.red.b, 1), _timePlayerInRayBeforeAction * Time.deltaTime * 2f);	
 				}
 
 				//If the player can be detected and was seen for long enoug
 				if (PlayerDetectable() && (_alwaysDetectPlayer || _timePlayerDetected != 0 && Time.time - _timePlayerDetected >= _timePlayerInRayBeforeAction)) {
+				
+					_exclamation.color = Color.red;
+					_exclamation.transform.localScale = Vector3.one * 0.1f;
 					_playerDetected = true;
 				}
 			}
